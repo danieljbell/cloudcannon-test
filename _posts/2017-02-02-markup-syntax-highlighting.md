@@ -78,11 +78,3 @@ Indentation matters. Be sure the indent of the code block aligns with the first 
    print_hi('Tom')
    #=> prints 'Hi, Tom' to STDOUT.
    ```
-
-3. Now you can do this.
-
-### GitHub Gist Embed
-
-An example of a Gist embed below.
-
-{% gist erayaydin/389ba710799435216f604fc8b532963a %}

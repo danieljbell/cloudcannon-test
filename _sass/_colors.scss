@@ -34,6 +34,10 @@
   background-color: $greenbg;
 }
 
+.darkgreenbg {
+  background-color: darken($greenbg, 42);
+}
+
 .greybg {
   background-color: $greybg;
 }

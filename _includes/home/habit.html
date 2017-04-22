@@ -1,0 +1,25 @@
+<section class="home__habit section greybg">
+  <div class="container-fluid">
+    <div class="content is-large columns">
+      <div class="home__habit-copy column is-6">
+        {% include elements/title.html
+          size="3"
+          strong=true
+          text='
+            We are what we repeatedly do.
+            Excellence, is not an act, <span class="cream darkpinkbg">but a habit.</span>
+          '
+        %}
+        <p>
+          You can't do a few sit-ups on Monday, eat donuts on Tuesday, and expect a 6-pack on Friday.
+        </p>
+      </div>
+      {% include elements/image.html
+        src="home/doughnut.png"
+        title="home-doughnut"
+        classes="column"
+        size="1by1"
+      %}
+    </div>
+  </div>
+</section>

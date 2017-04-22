@@ -1,0 +1,35 @@
+<section class="home__intro section">
+  <div class="container-fluid">
+    <div class="level-left">
+      <div class="level-item">
+        <div class="heading">
+          {% capture headingText %}
+            <span class="green emdash">&mdash;</span> {{site.name}}
+          {% endcapture %}
+
+          {% include elements/title.html
+            size="3"
+            strong=true
+            text=headingText
+          %}
+        </div>
+      </div>
+    </div>
+    <div class="home__intro-copy content is-large">
+      {% include elements/title.html
+        size="2"
+        strong=true
+        text="
+          Co-pilot. Assistant. Hype-man.
+          <br>
+          Check. Check. Check.
+        "
+      %}
+      <p>
+        What if every sales rep inherited the habits of your best
+        <br>
+        rep? With Costello, they do.
+      </p>
+    </div>
+  </div>
+</section>

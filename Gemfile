@@ -1,7 +1,10 @@
 source "https://rubygems.org"
 
+gem "rake"
+
 group :jekyll_plugins do
-   gem "jekyll-paginate", "~> 1.1.0"
-   gem "jekyll-feed", "~> 0.6"
-   gem "jekyll-gist"
+  gem "hawkins"
+  gem "jekyll-feed", "~> 0.6"
+  gem "jekyll-gist"
+  gem "jekyll-paginate", "~> 1.1.0"
 end

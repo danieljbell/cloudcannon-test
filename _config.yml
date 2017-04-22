@@ -1,0 +1,37 @@
+name: Costello
+description: >
+  "The sales intelligence platform that guides your reps to ask
+  the right questions, provides them with real-time suggestions, and forms
+  the habits that close more deals."
+baseurl: ""
+url: https://andcostello.com
+social:
+  github: andcostello
+  email: contact@andcostello.com
+  facebook: andcostello
+  twitter: andcostello
+author:
+  name: - Costello
+  email: contact@andcostello.com
+  github: contact@andcostello.com
+  facebook: andcostello
+  twitter: andcostello
+  show_on_post: true
+permalink: /:categories/:title/
+sass:
+  style: compressed
+paginate: 5
+paginate_path: "/:num/"
+markdown: kramdown
+
+gems:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-gist
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - CNAME

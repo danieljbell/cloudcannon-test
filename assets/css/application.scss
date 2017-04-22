@@ -3,7 +3,6 @@
 // Imports
 @import "variables";
 
-// Bulma.io CSS Framework
 @import "bulma/utilities/_all";
 @import "bulma/base/_all";
 @import "bulma/elements/_all";
@@ -15,15 +14,7 @@
 @import "font-awesome/font-awesome.scss";
 
 // Custom
-.nav-brand {
-  font-weight: bold;
-}
-
-.post-card {
-  .post-title {
-    font-size: 1.6em;
-  }
-  .post-categories {
-    margin-bottom: 5px;
-  }
-}
+@import "colors";
+@import "global";
+@import "section";
+@import "home/_all";

@@ -1,0 +1,23 @@
+.home__habit {
+  .image.is-1by1 {
+    padding-top: 32rem;
+    width: 100%;
+
+    @media(min-width: 768px) {
+      width: 14rem;
+    }
+  }
+
+  .image.is-1by1 img {
+    height: 100%;
+    margin: 0 auto;
+    max-height: 28rem;
+    width: 90%;
+
+    @media(min-width: 768px) {
+      margin-left: 4rem;
+      max-height: 32rem;
+      width: 100%;
+    }
+  }
+}

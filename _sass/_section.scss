@@ -1,0 +1,15 @@
+.section {
+  min-height: 100vh;
+  .content {
+    align-items: center;
+    margin: 10rem auto;
+
+    @media(min-width: 768px) {
+      margin: 10rem 10rem 0;
+    }
+
+    h2 {
+      font-weight: $bold;
+    }
+  }
+}

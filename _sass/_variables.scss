@@ -1,11 +1,12 @@
 // colors
 $magenta: #863D58;
 $darkpink: #a16479;
-$blue: #7AC1FF;
 $cream: #FFF4C5;
 $green: #007c04;
+$greenhighlight: #66af68;
 $lightgreen: #f0f7f0;
 $lightblue: #E4EAF4;
+$blue: #6686c3;
 $grey: #F7F7F7;
 
 $greenbg: $lightgreen;
@@ -13,7 +14,13 @@ $greybg: $grey;
 
 // font
 $bold: 700;
+//linespacing 150%
+$line-spacing: 1.5rem;
+
+$h3: 21px;
+$h3-spacing: 32px;
 
 // shadows
-$image-shadow: 0 0 8rem #ddd;
+//opacity => 15%
+$image-shadow: 0 0 20px #000;
 

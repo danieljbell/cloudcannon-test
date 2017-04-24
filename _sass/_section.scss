@@ -1,7 +1,4 @@
 .section {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
   padding: auto 1.5rem;
 
@@ -10,6 +7,14 @@
 
     h2 {
       font-weight: $bold;
+    }
+
+    h2 > span {
+      font-weight: $bold;
+    }
+
+    @media(min-width: 720px) {
+      padding: 0 10rem;
     }
   }
 

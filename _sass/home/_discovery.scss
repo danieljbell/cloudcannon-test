@@ -1,0 +1,8 @@
+.home__discovery {
+  align-items: center;
+  display: flex;
+
+  .image img {
+    box-shadow: $image-shadow;
+  }
+}

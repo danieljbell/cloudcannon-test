@@ -1,9 +1,11 @@
 <section class="home__discovery section">
-  <div class="container-fluid">
+  <div class="container">
     <div class="content is-medium columns">
-      {% include elements/image.html
-        src="home/discovery.png"
-      %}
+      <div class="home__discovery-image column is-6">
+        {% include elements/image.html
+          src="home/discovery.png"
+        %}
+      </div>
       <div class="home__discovery-copy column is-5 is-offset-1">
         {% include elements/title.html
           size="3"

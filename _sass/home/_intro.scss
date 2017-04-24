@@ -4,7 +4,6 @@
 
     @media(min-width: 720px) {
       margin: 10rem 0 7rem 0;
-      padding: 0 10rem;
     }
   }
 
@@ -16,6 +15,6 @@
   .image img {
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
-    box-shadow: 0px 0px 8rem #ddd;
+    box-shadow: $image-shadow;
   }
 }

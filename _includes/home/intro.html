@@ -3,10 +3,8 @@
     <div class="level-left">
       <div class="level-item">
         <div class="heading">
-          {% include elements/title.html
-            size="3"
-            strong=true
-            text='<span class="green emdash">&mdash;</span> Costello'
+          {% include elements/image.html
+            src="global/logo.png"
           %}
         </div>
       </div>
@@ -16,7 +14,7 @@
         size="2"
         strong=true
         text="
-          <span class='darkgreenbg'><strong>Co-pilot.</strong></span> Assistant. Hype-man.
+          <span class='green-highlight'><strong>Co-pilot.</strong></span> Assistant. Hype-man.
           <br>
           Check. Check. Check.
         "
@@ -26,10 +24,12 @@
         <br>
         rep? With Costello, they do.
       </p>
+      <a class="button" href="#contact">Contact us</a>
     </div>
     <div class="home__intro-image">
       {% include elements/image.html
-        src="home/intro.png"
+        src="home/intro-window.png"
+        classes="home__intro-image-window"
       %}
     </div>
   </div>

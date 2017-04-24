@@ -1,7 +1,7 @@
 <section class="home__habit section greybg">
-  <div class="container-fluid">
+  <div class="container">
     <div class="content is-large columns">
-      <div class="home__habit-copy column is-6">
+      <div class="home__habit-copy column is-7">
         {% include elements/title.html
           size="3"
           strong=true
@@ -14,11 +14,12 @@
           You can't do a few sit-ups on Monday, eat donuts on Tuesday, and expect a 6-pack on Friday.
         </p>
       </div>
-      {% include elements/image.html
-        src="home/doughnut.png"
-        title="home-doughnut"
-        size=""
-      %}
+      <div class="home__habit-image column ">
+        {% include elements/image.html
+          src="home/doughnut.png"
+          title="home-doughnut"
+        %}
+      </div>
     </div>
   </div>
 </section>

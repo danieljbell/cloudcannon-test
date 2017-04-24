@@ -1,15 +1,18 @@
 .section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+  padding: auto 1.5rem;
+
   .content {
     align-items: center;
-    margin: 10rem auto;
-
-    @media(min-width: 768px) {
-      margin: 10rem 10rem 0;
-    }
 
     h2 {
       font-weight: $bold;
     }
+  }
+
+  .image {
   }
 }

@@ -1,25 +1,31 @@
 <section class="home__enter-costello section">
   <div class="container">
-    <div class="content is-large">
-      <div class="home__enter-costello-copy">
-        {% include elements/title.html
-          size="2"
-          strong=true
-          text="Enter Costello."
-        %}
-        <p>
-          The first and only sales intelligence platform that guides
-          <br>
-          reps to ask the right questions, provides them with real-time
-          <br>
-          suggestions, and forms the habits that close more deals.
-        </p>
+    <div class="columns">
+      <div class="home__enter-costello-copy column is-full">
+        <div class="content is-medium">
+          {% include elements/title.html
+            size="2"
+            strong=true
+            text="Enter Costello."
+          %}
+          <p>
+            The first and only sales intelligence platform that guides
+            reps to ask the right questions, provides them with real-time
+            suggestions, and forms the habits that close more deals.
+          </p>
+        </div>
       </div>
+      {% include elements/image.html
+        src="home/airplane.png"
+        title="airplane"
+        classes="column airplane"
+      %}
+    </div>
+    <div class="columns">
       {% include elements/image.html
         src="home/enter-costello.png"
         title="Enter Costello"
-        size="16by9"
-        classes="level"
+        classes="column is-full-desktop"
       %}
     </div>
   </div>

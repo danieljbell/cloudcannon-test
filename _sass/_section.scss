@@ -13,6 +13,10 @@
     min-height: 70vh;
   }
 
+  @media(min-width: $desktop) {
+    min-height: 100vh;
+  }
+
   .content {
     align-items: center;
 

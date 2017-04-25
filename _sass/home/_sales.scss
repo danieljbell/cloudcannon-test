@@ -1,17 +1,13 @@
 .home__sales {
   align-items: flex-start;
-  background: url(/assets/images/home/trashcan.png) 39% 12% no-repeat;
+  background-image: url(/assets/images/home/trashcan.png);
   background-color: $grey;
-  min-height: 100vh;
-
-  @media(min-width: $mobile) {
-    background: url(/assets/images/home/trashcan.png) 50% no-repeat;
-    background-color: $grey;
-  }
+  background-position: 39% 12%;
+  background-repeat: no-repeat;
+  height: 70vh;
 
   @media(min-width: $tablet) {
-    background-position: left -18.18rem bottom -28rem;
-    background-color: $grey;
+    background-position: 37% 2%;
   }
 
   @media(min-width: $desktop) {

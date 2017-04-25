@@ -1,2 +1,14 @@
-//roboto bold
-//roboto light
+$font-family: 'Roboto', sans-serif;
+$family-primary: $font-family;
+$font-light: 300;
+$font-bold: 700;
+//linespacing 150%
+$line-spacing: 1.5rem;
+
+$weight-normal: $font-bold;
+$weight-semibold: $font-bold;
+$weight-light: $font-light;
+
+.title strong, .subtitle strong {
+  font-weight: $weight-normal;
+}

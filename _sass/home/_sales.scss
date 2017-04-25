@@ -1,3 +1,21 @@
 .home__sales {
-  display: flex;
+  align-items: flex-start;
+  background: url(/assets/images/home/trashcan.png) 39% 12% no-repeat;
+  background-color: $grey;
+
+  @media(min-width: $mobile) {
+    background: url(/assets/images/home/trashcan.png) 42% -2% no-repeat;
+    background-color: $grey;
+  }
+
+  @media(min-width: $tablet) {
+    background-position: left -18.18rem bottom -21rem;
+    background-color: $grey;
+  }
+
+  @media(min-width: $desktop) {
+    align-items: center;
+    background-position: left -32.18rem bottom -21rem;
+    min-height: 80vh;
+  }
 }

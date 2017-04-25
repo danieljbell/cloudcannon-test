@@ -1,14 +1,17 @@
 .home__intro {
+  margin-bottom: 0;
+  min-height: 50vh;
+  padding: 2rem 2rem 0;
+
+  @media(min-width: $mobile) {
+    padding-bottom: 0;
+  }
+
   .content {
     margin-top: 3rem;
 
-    @media(min-width: 720px) {
+    @media(min-width: $mobile) {
       margin: 10rem 0 4rem 0;
     }
-  }
-
-  &-image-window {
-    padding: 0 2rem 0;
-    margin: 3rem 0 0;
   }
 }

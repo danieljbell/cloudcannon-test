@@ -9,12 +9,10 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml" />
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
     <link rel="stylesheet" href="{{ "/assets/css/application.css" | prepend: site.baseurl }}" />
-    <link rel="stylesheet" href="{{ "/assets/css/prism.css" | prepend: site.baseurl }}" />
   </head>
   <body>
     {{content}}
-    <script src="{{ site.baseurl }}{{ "/assets/js/jquery-3.1.1.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/assets/js/prism.js" | prepend: site.baseurl }}"></script>
   </body>
 </html>

@@ -3,8 +3,16 @@
   min-height: 50vh;
   padding: 2rem 2rem 0;
 
+  .level-item {
+    justify-content: flex-start;
+  }
+
   @media(min-width: $mobile) {
     padding-bottom: 0;
+
+    .level-item {
+      justify-content: center;
+    }
   }
 
   .content {

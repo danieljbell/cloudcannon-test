@@ -1,3 +1,11 @@
 .home__habit {
+  .image {
+    padding: 0 30%;
+  }
 
+  @media(min-width: $tablet) {
+    .image {
+      padding: 0;
+    }
+  }
 }

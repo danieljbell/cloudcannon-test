@@ -1,16 +1,15 @@
 .section {
-  align-items: flex-start;
-  display: flex;
   padding: 5rem 2rem;
 
   @media(min-width: $desktop) {
-    align-items: center;
     padding: 21rem 2rem;
   }
 
-  .content {
+  .columns {
     align-items: center;
+  }
 
+  .content {
     h2 {
       font-weight: $font-bold;
     }

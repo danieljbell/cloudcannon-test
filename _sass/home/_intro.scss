@@ -10,7 +10,13 @@
 
   @media(min-width: $tablet) {
     background-position: 40% 50%;
+    background-size: 60%;
     padding-bottom: 0;
+  }
+
+  @media(min-width: $widescreen) {
+    background-position: 50% 33%;
+    background-size: 50%;
   }
 
   .level-item {

@@ -1,10 +1,5 @@
 .home__habit {
   align-items: center;
-  min-height: 100vh;
-
-  @media(min-width: $desktop) {
-    min-height: 70vh;
-  }
 
   &-copy {
     margin-bottom: 3rem;

@@ -5,6 +5,7 @@
   background-position: 39% 12%;
   background-repeat: no-repeat;
   min-height: 70vh;
+  transition: all .5s ease-in-out;
 
   @media(min-width: $mobile) {
     background-position: 37% 2%;

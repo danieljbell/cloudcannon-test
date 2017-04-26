@@ -1,24 +1,22 @@
 <section class="home__prep section greenbg">
-  <div class="container">
-    <div class="content is-large columns">
-      <div class="home__prep-image column is-6">
-        {% include elements/image.html
-          src="home/prep.png"
-        %}
-      </div>
-      <div class="home__prep-copy column is-5 is-offset-1">
-        {% include elements/title.html
-          size="3"
-          strong=true
-          text="Do more of the <span class='green-highlight'><strong>right things.</strong></span>"
-        %}
-        <p>
-          Reps know what to do. Costello just helps
-          them remember. Prep constructively, ask
-          timely questions, tell relevant stories, and
-          follow up consistenly to win more deals.
-        </p>
-      </div>
+  <div class="container home__prep-container">
+    <div class="home__prep-image">
+      {% include elements/image.html
+        src="home/prep.png"
+      %}
+    </div>
+    <div class="home__prep-copy content is-large">
+      {% include elements/title.html
+        size="3"
+        strong=true
+        text="Do more of the <span class='green-highlight'><strong>right things.</strong></span>"
+      %}
+      <p>
+        Reps know what to do. Costello just helps
+        them remember. Prep constructively, ask
+        timely questions, tell relevant stories, and
+        follow up consistenly to win more deals.
+      </p>
     </div>
   </div>
 </section>

@@ -6,8 +6,9 @@
   background-repeat: no-repeat;
   height: 70vh;
 
-  @media(min-width: $tablet) {
+  @media(min-width: $mobile) {
     background-position: 37% 2%;
+    height: auto;
   }
 
   @media(min-width: $desktop) {

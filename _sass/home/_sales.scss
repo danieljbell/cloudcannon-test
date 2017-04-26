@@ -4,16 +4,17 @@
   background-color: $grey;
   background-position: 39% 12%;
   background-repeat: no-repeat;
-  min-height: 70vh;
+  min-height: 75vh;
   transition: all .5s ease-in-out;
 
   @media(min-width: $mobile) {
     background-position: 37% 2%;
-    height: auto;
+    padding: 1rem 2rem;
   }
 
   @media(min-width: $desktop) {
     align-items: center;
     background-position: left -32.18rem bottom -21rem;
+    padding: 22rem 2rem;
   }
 }

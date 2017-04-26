@@ -1,26 +1,15 @@
-<section id="contact" class="home__contact section">
-  <div class="container">
-    <div class="content is-large columns">
-      <div class="home__contact-image column is-6">
-        {% include elements/image.html
-          src="home/discovery.png"
-        %}
-      </div>
-      <div class="home__discovery-copy column is-5 is-offset-1">
-        {% include elements/title.html
-          size="3"
-          strong=true
-          text="Turn insights into real-time, <br>
-            <span class='bluebg'>intelligent actions.</span>"
-        %}
-        <p>
-          No more "reviewing the tape." Costello
-          <br>
-          provides customized suggestions and
-          <br>
-          anecdotes based on your sales process.
-        </p>
-      </div>
+<section class="home__contact section">
+  <div id="contact" class="container-fluid home__contact-container">
+    <div class="home__contact-copy content is-large">
+      {% include elements/title.html
+        size="3"
+        strong=true
+        text="Interested? <br />Of course you are."
+      %}
+      {% include elements/image.html
+        src="global/logo.png"
+      %}
     </div>
+    {% include elements/form.html %}
   </div>
 </section>

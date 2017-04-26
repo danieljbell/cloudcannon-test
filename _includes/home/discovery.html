@@ -1,22 +1,24 @@
 <section class="home__discovery section">
-  <div class="home__discovery-container">
-    <div class="home__discovery-image">
-      {% include elements/image.html
-        src="home/discovery.png"
-      %}
-    </div>
-    <div class="home__discovery-copy content is-large">
-      {% include elements/title.html
-        size="3"
-        strong=true
-        text="Turn insights into real-time, <br>
-          <span class='bluebg'><strong>intelligent actions.</strong></span>"
-      %}
-      <p>
-        No more "reviewing the tape." Costello
-        provides customized suggestions and
-        anecdotes based on your sales process.
-      </p>
+  <div class="column is-10 is-offset-1 home__discovery-container">
+    <div class="columns">
+      <div class="home__discovery-image column is-half-desktop is-full-mobile">
+        {% include elements/image.html
+          src="home/discovery.png"
+        %}
+      </div>
+      <div class="home__discovery-copy column is-half-desktop is-full-mobile content is-large">
+        {% include elements/title.html
+          size="3"
+          strong=true
+          text="Turn insights into real-time, <br>
+            <span class='bluebg'><strong>intelligent actions.</strong></span>"
+        %}
+        <p>
+          No more "reviewing the tape." Costello
+          provides customized suggestions and
+          anecdotes based on your sales process.
+        </p>
+      </div>
     </div>
   </div>
 </section>

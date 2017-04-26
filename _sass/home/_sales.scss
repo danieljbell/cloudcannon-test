@@ -4,7 +4,7 @@
   background-color: $grey;
   background-position: 39% 12%;
   background-repeat: no-repeat;
-  height: 70vh;
+  min-height: 70vh;
 
   @media(min-width: $mobile) {
     background-position: 37% 2%;

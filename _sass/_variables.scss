@@ -8,6 +8,7 @@ $lightgreen: #f0f7f0;
 $lightblue: #E4EAF4;
 $blue: #6686c3;
 $grey: #F7F7F7;
+$darkgrey: darken($grey, 20);
 
 $greenbg: $lightgreen;
 $greybg: $grey;
@@ -15,6 +16,10 @@ $greybg: $grey;
 // shadows
 //opacity => 15%
 $image-shadow: 0 0 20px #000;
+
+// modifiers
+$radius: 5px;
+$button-border: none;
 
 // breakpoints
 $mobile: 720px;

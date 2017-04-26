@@ -1,10 +1,19 @@
 .home__habit {
-  .image {
-    padding: 0 30%;
+  align-items: center;
+  min-height: 100vh;
+
+  @media(min-width: $desktop) {
+    min-height: 70vh;
   }
 
-  @media(min-width: $tablet) {
-    .image {
+  &-copy {
+    margin-bottom: 3rem;
+  }
+
+  .image {
+    padding: 0 30%;
+
+    @media(min-width: $tablet) {
       padding: 0;
     }
   }

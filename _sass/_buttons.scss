@@ -1,0 +1,22 @@
+.button {
+  &.whitebg {
+    &:hover {
+      background-color: $grey;
+    }
+  }
+  &.greybg {
+    &:hover {
+      background-color: $darkgrey;
+    }
+  }
+  &.darkgreybg {
+    &:hover {
+      background-color: darken($darkgrey, 5);
+    }
+  }
+  &.green-highlight {
+    &:hover {
+      background-color: lighten($greenhighlight, 20);
+    }
+  }
+}

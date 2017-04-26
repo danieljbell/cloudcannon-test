@@ -1,7 +1,14 @@
 .home__intro {
+  background-image: url(/assets/images/home/intro-bg.png);
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
+  background-size: 80%;
   margin-bottom: 0;
-  min-height: 50vh;
   padding: 2rem 2rem 0;
+
+  @media(min-width: $mobile) {
+    background-position: 40% 50%;
+  }
 
   .level-item {
     justify-content: flex-start;

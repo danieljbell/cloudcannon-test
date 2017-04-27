@@ -1,6 +1,18 @@
 .home__contact {
 	background: url(/assets/images/home/contact-bg.png) center no-repeat;
-	//padding: 11rem 0 11rem 8rem;
+  background-size: 100%;
+
+  @media(min-width: $desktop) {
+    background-size: 70%;
+  }
+
+  @media(min-width: $widescreen) {
+    background-size: 60%;
+  }
+
+  @media(min-width: 1820px) {
+    background-size: 45%;
+  }
 
   &-container {
     display: flex;
@@ -15,16 +27,12 @@
       padding: 22rem 30%;
     }
 
-    @media(min-width: $tablet) {
-      padding: 22rem 25%;
-    }
-
     @media(min-width: $desktop) {
-      padding: 0 33.3%;
+      padding: 0 37%;
     }
 
     @media(min-width: $widescreen) {
-      padding: 0 40%;
+      padding: 0 42%;
     }
   }
 
@@ -33,5 +41,13 @@
     margin-left: auto;
     margin-right: 4rem;
 		width: 96px;
+  }
+
+  .field {
+    margin-bottom: 1rem;
+  }
+
+  input[type=submit] {
+    margin-top: 1rem;
   }
 }

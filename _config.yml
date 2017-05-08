@@ -1,8 +1,9 @@
 name: Costello
-description: >
-  "The sales intelligence platform that guides your reps to ask
-  the right questions, provides them with real-time suggestions, and forms
-  the habits that close more deals."
+seo:
+  description: >
+    The sales intelligence platform that guides your reps to ask
+    the right questions, provides them with real-time suggestions, and forms
+    the habits that close more deals.
 baseurl: ""
 url: https://andcostello.com
 social:

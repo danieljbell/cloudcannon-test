@@ -5,6 +5,8 @@ categories:
     - Markup
 comments: true
 permalink: html-tags-formatting.html
+draft: true
+published: false
 ---
 
 A variety of common markup showing how the theme styles them.

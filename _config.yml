@@ -1,4 +1,8 @@
 name: Costello
+colors:
+  - Green
+  - Blue
+  - Magenta
 seo:
   description: >
     The sales intelligence platform that guides your reps to ask

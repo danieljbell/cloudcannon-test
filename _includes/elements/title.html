@@ -1,6 +1,7 @@
 {% assign classes = include.classes or '' %}
+{% assign hcolor = include.highlight_color | downcase %}
 
-{% case include.highlight_color %}
+{% case hcolor %}
   {% when 'green' %}
     {% assign color = 'green-highlight' %}
   {% when 'blue' %}

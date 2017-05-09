@@ -1,9 +1,5 @@
 .home__enter-costello {
-  padding: 5rem 2rem 0;
-
-  @media(min-width: 480px) {
-    padding: 8rem 2rem 0;
-  }
+  padding-bottom: 0;
 
   &-copy {
     margin: auto 0 2rem;
@@ -21,11 +17,12 @@
   }
 
   .airplane  {
-    top: -2rem;
+    top: 15rem;
     right: 0;
     position: absolute;
     width: 25%;
     transition: all .5s ease-in-out;
+    z-index: 2;
 
     @media(min-width: 450px) {
       right: 0;
@@ -34,18 +31,22 @@
     }
 
     @media(min-width: $mobile) {
-      top: -5rem;
+      right: 40%;
+      top: 10rem;
+      width: 12%;
     }
 
     @media(min-width: $desktop) {
       left: unset;
-      right: 8rem;
-      top: 13rem;
+      right: 0;
+      top: 16rem;
+      width: 22%;
     }
 
     @media(min-width: $widescreen) {
-      right: 4rem;
-      top: 14rem;
+      right: 5rem;
+      top: 15rem;
+      width: 19%;
     }
   }
 }

@@ -2,13 +2,16 @@
   align-items: flex-start;
   background-image: url(/assets/images/home/trashcan.png);
   background-color: $grey;
-  background-position: 39% 12%;
+  background-position: bottom;
   background-repeat: no-repeat;
+  background-size: 100%;
   min-height: 75vh;
+  padding-top: 1rem;
   transition: all .5s ease-in-out;
 
-  @media(min-width: $mobile) {
-    background-position: 37% 2%;
+  @media(min-width: 320px) {
+    background-position: 45% 0;
+    background-size: unset;
     padding: 1rem 2rem;
   }
 

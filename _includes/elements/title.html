@@ -1,13 +1,29 @@
 {% assign classes = include.classes or '' %}
 
+{% case include.highlight_color %}
+  {% when 'green' %}
+    {% assign color = 'green-highlight' %}
+  {% when 'blue' %}
+    {% assign color = 'blue' %}
+  {% when 'magenta' %}
+    {% assign color = 'darkpinkbg' %}
+{% endcase %}
+
+{% if include.highlight %}
+  {% capture highlight_markup %}<span class="{{color}}">{{include.highlight}}</span>{% endcapture %}
+  {% assign text = include.text | replace: include.highlight, highlight_markup %}
+{% else %}
+  {% assign text = include.text %}
+{% endif %}
+
 <h{{include.size}}
   class="title is-{{include.size}} {{classes}}"
 >
   {% if include.strong %}
     <strong>
-      {{include.text}}
+      {{text}}
     </strong>
   {% else %}
-    {{include.text}}
+    {{text}}
   {% endif %}
 </h{{include.size}}>

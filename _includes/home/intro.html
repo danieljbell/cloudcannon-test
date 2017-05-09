@@ -12,9 +12,10 @@
     <div class="home__intro-copy content is-large">
       {% include elements/title.html
         size="3"
+        highlight=include.data.heading_highlight
+        highlight_color=include.data.heading_highlight_color
         strong=true
-        text='The <span class="green-highlight"><strong>best</strong></span> sales reps are consistent<br />
-          But consistency in sales is hard'
+        text=include.data.heading
       %}
       <p class="editable">What if every sales rep inherited the habits of your best rep?<br />With Costello, they do.</p>
       <a class="button darkgreybg is-medium editable" href="#contact"><strong>Contact us</strong></a>

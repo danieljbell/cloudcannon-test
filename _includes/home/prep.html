@@ -9,8 +9,10 @@
       <div class="home__prep-copy column is-half-desktop is-full-mobile content is-large">
         {% include elements/title.html
           size="3"
+          highlight=include.data.heading_highlight
+          highlight_color=include.data.heading_highlight_color
           strong=true
-          text="Do more of the <span class='green-highlight'><strong>right things.</strong></span>"
+          text=include.data.heading
         %}
         <p class="editable">
           Reps know what to do. Costello just helps

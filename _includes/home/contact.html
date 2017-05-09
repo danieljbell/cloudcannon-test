@@ -3,12 +3,10 @@
     <div class="home__contact-copy content is-large">
       {% include elements/title.html
         size="3"
+        highlight=include.data.heading_highlight
+        highlight_color=include.data.heading_highlight_color
         strong=true
-        text="
-          <span class='green-highlight'><strong>Co-pilot.</strong></span> Assistant. Hype-man.
-          <br>
-          Check. Check. Check.
-        "
+        text=include.data.heading
       %}
       {% include elements/image.html
         src="global/logo.png"

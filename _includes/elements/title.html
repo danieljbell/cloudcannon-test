@@ -4,13 +4,13 @@
   {% when 'green' %}
     {% assign color = 'green-highlight' %}
   {% when 'blue' %}
-    {% assign color = 'blue' %}
+    {% assign color = 'bluebg' %}
   {% when 'magenta' %}
     {% assign color = 'darkpinkbg' %}
 {% endcase %}
 
 {% if include.highlight %}
-  {% capture highlight_markup %}<span class="{{color}}">{{include.highlight}}</span>{% endcapture %}
+  {% capture highlight_markup %}<span class="{{color}}"><strong>{{include.highlight}}</strong></span>{% endcapture %}
   {% assign text = include.text | replace: include.highlight, highlight_markup %}
 {% else %}
   {% assign text = include.text %}

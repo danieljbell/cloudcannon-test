@@ -1,0 +1,24 @@
+.nav {
+  align-items: center;
+  box-shadow: 0 0 1px #eee;
+  justify-content: space-between;
+  left: 0;
+  padding: .3rem 5rem .3rem .5rem;
+  position: fixed !important;
+  right: 0;
+  top: 0;
+  width: 100vw;
+
+  .contact-link {
+    font-size: 1rem;
+    padding: 0 .8rem;
+  }
+
+  @media(min-width: $tablet) {
+    padding: .5rem 8rem;
+
+    .contact-link {
+      padding: 1rem;
+    }
+  }
+}

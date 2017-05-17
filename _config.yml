@@ -25,6 +25,8 @@ sass:
 paginate: 5
 paginate_path: '/:num/'
 markdown: kramdown
+datanyze:
+  tracking_id: m4VVPteoiYA%3D
 google:
   tag_manager:
     container_id: GTM-N537LXB

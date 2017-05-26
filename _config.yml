@@ -4,12 +4,9 @@ colors:
   - Blue
   - Magenta
 seo:
-  description: >
-    The sales intelligence platform that guides your reps to ask
-    the right questions, provides them with real-time suggestions, and forms
-    the habits that close more deals.
-baseurl: ""
-url: https://andcostello.com
+  description: 'The sales intelligence platform that guides your reps to ask the right questions, provides them with real-time suggestions, and forms the habits that close more deals.'
+baseurl:
+url: 'https://andcostello.com'
 social:
   github: andcostello
   email: contact@andcostello.com
@@ -22,18 +19,21 @@ author:
   facebook: andcostello
   twitter: andcostello
   show_on_post: true
-permalink: /:categories/:title/
+permalink: '/:categories/:title/'
 sass:
   style: compressed
 paginate: 5
-paginate_path: "/:num/"
+paginate_path: '/:num/'
 markdown: kramdown
-
+datanyze:
+  tracking_id: m4VVPteoiYA%3D
+google:
+  tag_manager:
+    container_id: GTM-N537LXB
 gems:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-sitemap
-
 exclude:
   - Gemfile
   - Gemfile.lock

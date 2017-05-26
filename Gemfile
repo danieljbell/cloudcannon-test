@@ -5,6 +5,7 @@ gem "rake"
 group :jekyll_plugins do
   gem "hawkins"
   gem "jekyll-feed"
+  gem "jekyll-google-tag-manager"
   gem "jekyll-paginate"
   gem "jekyll-sitemap"
 end

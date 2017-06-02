@@ -4,6 +4,11 @@
   background-repeat: no-repeat;
   background-size: 90%;
 
+  @media(min-width: $mobile) {
+    background-position: 20%;
+    background-size: 40%;
+  }
+
   @media(min-width: $desktop) {
     background-position: center;
     background-size: 40%;

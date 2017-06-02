@@ -1,18 +1,11 @@
 .home__contact {
   background: url(/assets/images/home/contact-bg.png) center no-repeat;
-  background-size: 100%;
+  background-position: 50% 60%;
+  background-size: 20rem;
 
-  @media(min-width: $tablet) {
-    background-size: 70%;
-  }
-
-  @media(min-width: $desktop) {
-    background-size: 50%;
-  }
-
-  @media(min-width: $widescreen) {
+  @media(min-width: $mobile) {
+    background-size: 37rem;
     background-position: bottom;
-    background-size: 33%;
   }
 
   &-container {
@@ -20,7 +13,6 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 90%;
 
     @media(min-width: 375px) {
       width: 21rem;

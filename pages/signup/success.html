@@ -2,6 +2,9 @@
 layout: default
 title: Thank you
 permalink: /signup/success
+includes:
+  head:
+    - analytics/fb_thankyou.html
 ---
 
 <section class="thank-you columns is-centered is-12" style="padding-top: 20vh;">
@@ -33,3 +36,5 @@ permalink: /signup/success
     </div>
   </div>
 </section>
+
+{% include analytics/adwords_conversion.html data=site.google.adwords %}

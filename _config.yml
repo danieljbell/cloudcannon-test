@@ -30,6 +30,17 @@ datanyze:
 google:
   tag_manager:
     container_id: GTM-N537LXB
+  adwords:
+    conversion_id: 851313951
+    conversion_language: "en"
+    conversion_format: 3
+    conversion_color: ffffff
+    conversion_label: gWKiCOGn-XEQn4r4lQM
+    remarketing_only: false
+linkedin:
+  partner_id: 51982
+facebook:
+  pixel_id: 1402733833127292
 gems:
   - jekyll-paginate
   - jekyll-feed

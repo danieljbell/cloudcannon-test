@@ -1,7 +1,11 @@
-{% gtm head %}
 <!--Begin Datanyze tag-->
 <script>
   (function(a,b){window.dnz=window.dnz||function(){(dnz.q=dnz.q||[]).push(arguments)};a=document.createElement("script");b=document.getElementsByTagName("script")[0];a.async=1;a.src="//tr.datanyze.com/tr2.js";b.parentNode.insertBefore(a,b)})();
   dnz("tracking","{{site.datanyze.tracking_id}}");
 </script>
 <!--End Datanyze script-->
+
+<!--Begin linkedin remarketing tag-->
+<script>_linkedin_data_partner_id="{{site.linkedin.partner_id}}";</script>
+<script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid={{site.linkedin.partner_id}}&fmt=gif" /></noscript>
+<!--End linkedin remarketing tag-->

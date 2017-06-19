@@ -1,6 +1,10 @@
 .home__enter-costello {
   padding-bottom: 0;
 
+  .container {
+    padding-bottom: 0;
+  }
+
   &-copy {
     margin: auto 0 2rem;
 
@@ -17,7 +21,7 @@
   }
 
   .airplane  {
-    top: 15rem;
+    top: 16rem;
     right: 0;
     position: absolute;
     width: 25%;

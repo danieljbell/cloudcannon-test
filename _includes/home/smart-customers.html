@@ -1,0 +1,24 @@
+<section class="home__smart-customers section greybg">
+  <div class="container level">
+    <div class="content is-large columns column is-12">
+      <div class="home__smart-customers-copy column is-5 is-offset-1">
+        {% include elements/title.html
+          size="3"
+          strong=true
+          highlight=include.data.heading_highlight
+          highlight_color=include.data.heading_highlight_color
+          text=include.data.heading
+        %}
+        <p class="editable">
+          Today's buyers are busy and believe they can find what they need on their own. In the age of digital sharing, every interaction influences a customer's perception.
+        </p>
+      </div>
+      <div class="home__smart-customers-image column is-5">
+        {% include elements/image.html
+          src="home/smartcustomers.svg"
+          title="smart-customers"
+        %}
+      </div>
+    </div>
+  </div>
+</section>

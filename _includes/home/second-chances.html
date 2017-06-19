@@ -1,0 +1,68 @@
+<section class="home__second-chances section greybg">
+  <div class="container level">
+    <div class="content is-large columns column is-12">
+      <div class="home__second-chances-image column is-4 is-offset-1">
+        {% include elements/image.html
+          src="home/dice.svg"
+          title="second-chances"
+          classes="dice-image"
+        %}
+      </div>
+      <div class="home__second-chances-copy column is-5 is-offset-1">
+        {% include elements/title.html
+          size="3"
+          strong=true
+          highlight=include.data.heading_highlight
+          highlight_color=include.data.heading_highlight_color
+          text=include.data.heading
+        %}
+        <p class="editable">
+          You cannot <em>wing it</em> today. Every buyer expects sales reps to
+          <br>
+          <ul>
+            <li class="level-left level-item">
+              {% include elements/image.html
+                src="home/checkbox.svg"
+                title="checkbox"
+                classes="checkbox-image"
+              %}
+              <span>Come prepared</span>
+            </li>
+            <li class="level-left level-item">
+              {% include elements/image.html
+                src="home/checkbox.svg"
+                title="checkbox"
+                classes="checkbox-image"
+              %}
+              <span>Ask great questions</span>
+            </li>
+            <li class="level-left level-item">
+              {% include elements/image.html
+                src="home/checkbox.svg"
+                title="checkbox"
+                classes="checkbox-image level-left"
+              %}
+              <span>Share relevant stories</span>
+            </li>
+            <li class="level-left level-item">
+              {% include elements/image.html
+                src="home/checkbox.svg"
+                title="checkbox"
+                classes="checkbox-image level-left"
+              %}
+              <span>Follow-up in a timely manner</span>
+            </li>
+            <li class="level-left level-item">
+              {% include elements/image.html
+                src="home/checkbox.svg"
+                title="checkbox"
+                classes="checkbox-image level-left"
+              %}
+              <span>Demonstrate alignment</span>
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

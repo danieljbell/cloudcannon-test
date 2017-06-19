@@ -1,0 +1,23 @@
+.home__smart-customers {
+  align-items: center;
+  padding-top: 5rem;
+
+  @media(min-width: $mobile) {
+    padding-top: 5rem;
+  }
+
+  &-copy {
+    @media(min-width: $mobile) {
+      margin-top: 2rem;
+    }
+  }
+
+  .image {
+    margin-top: 2rem;
+    padding: 0 20%;
+
+    @media(min-width: $tablet) {
+      padding: 0;
+    }
+  }
+}

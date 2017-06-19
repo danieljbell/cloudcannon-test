@@ -1,0 +1,40 @@
+.home__second-chances {
+  align-items: center;
+  padding-top: 3rem;
+
+  @media(min-width: $mobile) {
+    padding-top: 7rem;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0 auto;
+  }
+
+  li.level {
+    margin-bottom: .8rem;
+  }
+
+  &-copy {
+    margin-bottom: 3rem;
+  }
+
+  .checkbox-image {
+    height: 18px;
+    margin-right: 1rem;
+    width: 18px;
+  }
+
+  .dice-image {
+    margin-bottom: 2rem;
+    padding: 0 20%;
+
+    @media(min-width: $mobile) {
+      padding: 0 25%;
+    }
+
+    @media(min-width: $tablet) {
+      padding: 0;
+    }
+  }
+}

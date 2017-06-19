@@ -3,16 +3,50 @@ layout: default
 title: Home
 seo:
   description: Setup every sales rep to perform like your best rep.
+section_one:
+  heading: 'The best sales reps are consistent <br> But consistency in sales is hard'
+  heading_highlight: consistent
+  heading_highlight_color: Green
+section_two:
+  heading: 'We are what we repeatedly do. Excellence, is not an act, but a habit.'
+  heading_highlight: but a habit.
+  heading_highlight_color: Magenta
+section_three:
+  heading: Sales is no different.
+  heading_highlight:
+  heading_highlight_color:
+section_four:
+  heading: Meet Costello.
+  heading_highlight:
+  heading_highlight_color:
+section_five:
+  heading: Do more of the right things.
+  heading_highlight: right things.
+  heading_highlight_color: Green
+section_six:
+  heading: Turn insights into intelligent actions.
+  heading_highlight: intelligent actions.
+  heading_highlight_color: Blue
+section_seven:
+  heading: "See what's working, what isn't, and why."
+  heading_highlight: "what's working"
+  heading_highlight_color: Green
+section_eight:
+  heading: "If you like something, integrate it."
+  heading_highlight: "integrate it."
+  heading_highlight_color: Blue
+section_nine:
+  heading: 'Co-pilot. Assistant. Hype-man.<br>Check. Check. Check.'
+  heading_highlight: Co-pilot.
+  heading_highlight_color: Green
 ---
 
-{% assign home_data = site.data.home %}
-
-{% include home/intro.html data=home_data.section_one %}
-{% include home/habit.html data=home_data.section_two %}
-{% include home/sales.html data=home_data.section_three %}
-{% include home/enter-costello.html data=home_data.section_four %}
-{% include home/prep.html data=home_data.section_five %}
-{% include home/discovery.html data=home_data.section_six %}
-{% include home/takeaways.html data=home_data.section_seven %}
-{% include home/integrations.html data=home_data.section_eight %}
-{% include home/contact.html data=home_data.section_nine %}
+{% include home/intro.html data=page.section_one %}
+{% include home/habit.html data=page.section_two %}
+{% include home/sales.html data=page.section_three %}
+{% include home/enter-costello.html data=page.section_four %}
+{% include home/prep.html data=page.section_five %}
+{% include home/discovery.html data=page.section_six %}
+{% include home/takeaways.html data=page.section_seven %}
+{% include home/integrations.html data=page.section_eight %}
+{% include home/contact.html data=page.section_nine %}

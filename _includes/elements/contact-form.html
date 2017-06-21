@@ -9,21 +9,46 @@
   <div class="field">
     <label class="label" for="first_name">First Name</label>
     <p class="control">
-      <input name="first_name" maxlength="40" class="input" type="text" placeholder="First Name">
+      <input
+        name="first_name"
+        maxlength="40"
+        class="input"
+        type="text"
+        oninvalid="this.setCustomValidity('First name is required')"
+        oninput="setCustomValidity('')"
+        placeholder="First Name"
+        required
+      >
     </p>
   </div>
 
   <div class="field">
     <label class="label" for="last_name">Last Name</label>
     <p class="control">
-      <input name="last_name" class="input" type="text" placeholder="Last Name">
+      <input
+        name="last_name"
+        class="input" 
+        type="text"
+        oninvalid="this.setCustomValidity('Last name is required')"
+        oninput="setCustomValidity('')"
+        placeholder="Last Name"
+        required
+      >
     </p>
   </div>
 
   <div class="field">
-    <label class="label" for="email">Email</label>
+    <label class="label" for="email">Company Email</label>
     <p class="control">
-      <input name="email" class="input" type="text" placeholder="Email" required>
+      <input
+        name="email"
+        class="input"
+        type="text"
+        oninvalid="this.setCustomValidity('Email is required')"
+        oninput="setCustomValidity('')"
+        placeholder="Email"
+        required
+      >
     </p>
   </div>
 

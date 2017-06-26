@@ -25,6 +25,7 @@
   <body>
     {% include components/nav.html %}
     {{content}}
+    {% include components/footer.html %}
     {% if page.includes.body %}
       {% for i in page.includes.body %}
         {% include {{i}} %}

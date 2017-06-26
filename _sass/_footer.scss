@@ -1,0 +1,113 @@
+footer {
+  padding: 1.5rem;
+  margin-top: 3rem;
+
+  @media(min-width: $tablet) {
+    padding: 3rem 8rem;
+    margin-top: 5rem;
+  }
+
+  .level {
+    @media(min-width: $tablet) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  .level-left, .level-center, .level-right {
+    width: 100%;
+
+    @media(min-width: $tablet) {
+      width: 33.3%;
+    }
+  }
+
+  .level-left {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+
+    @media(min-width: $tablet) {
+      align-items: flex-start;
+      margin-right: auto;
+      width: 33.3%;
+      text-align: left;
+    }
+  }
+
+  .level-left .image {
+    width: 10rem;
+
+    @media(min-width: $tablet) {
+      width: 12rem;
+    }
+  }
+
+  .level-left address {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 1rem 0;
+
+    @media(min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.1rem;
+      margin: 1rem 0 0 2.5rem;
+    }
+  }
+
+  .level-center {
+    @media(min-width: $tablet) {
+      align-self: flex-end;
+    }
+  }
+
+  .level-right {
+    align-self: center;
+
+    @media(min-width: $tablet) {
+      align-self: flex-start;
+      margin-left: auto;
+    }
+  }
+
+  .level-right .social-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .level-right .social-links .title {
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+
+  .level-right .social-links ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    @media(min-width: $tablet) {
+      justify-content: space-between;
+    }
+  }
+
+  .level-right .social-links li {
+    margin: 0 1rem;
+  }
+
+  .level-right .social-links a {
+    font-size: 2em;
+
+    &:hover {
+      color: $blue;
+    }
+
+    @media(min-width: $tablet) {
+      font-size: 3em;
+    }
+  }
+}

@@ -8,11 +8,19 @@ seo:
   description: 'The sales intelligence platform that guides your reps to ask the right questions, provides them with real-time suggestions, and forms the habits that close more deals.'
 baseurl:
 url: 'https://andcostello.com'
+address:
+  street: 525 Union St.
+  suite: Suite 1A2
+  city: Indianapolis
+  state: IN
+  zip: 46225
+phone: 317.520.4325
 social:
-  github: andcostello
+  github: https://github.com/andcostello
   email: contact@andcostello.com
-  facebook: andcostello
-  twitter: andcostello
+  facebook: https://www.facebook.com/You.andCostello/
+  twitter: https://twitter.com/andCostello
+  linkedin: https://www.linkedin.com/company-beta/16234555/
 author:
   name: Costello
   email: contact@andcostello.com

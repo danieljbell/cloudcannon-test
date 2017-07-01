@@ -10,3 +10,17 @@
 
 #### Steps for local development
 * `rake start`(will serve jekyll site at `localhost:4000` and uses livereload for auto refresh)
+
+### Deployment
+Cloudcannon for hosting
+
+```yaml
+ Prod:
+   branch: master
+   url: https://andcostello.com
+ Stage:
+   branch: stage
+   url: https://fresh-gum.cloudvent.net
+```
+
+Documentation: https://docs.cloudcannon.com/editing/front-matter/

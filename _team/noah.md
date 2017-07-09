@@ -1,7 +1,7 @@
 ---
 name: Noah
-position: HBIC
-headshot: //fillmurray.com/400/400
+position: The Kid
+headshot: //placecage.com/400/400
 ---
 
 

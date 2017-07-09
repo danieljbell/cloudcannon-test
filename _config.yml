@@ -1,1 +1,13 @@
 title: Costello
+
+collections: 
+  team:
+    output: true
+
+defaults:
+  -
+    scope: 
+      path: "" 
+      type: "team"
+    values:
+      layout: "team-member"

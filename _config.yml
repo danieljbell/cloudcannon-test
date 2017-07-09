@@ -11,3 +11,5 @@ defaults:
       type: "team"
     values:
       layout: "team-member"
+      _defaults:
+        job_title: "insert job title here"

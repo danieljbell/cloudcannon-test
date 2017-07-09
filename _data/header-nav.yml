@@ -1,6 +1,4 @@
-- name: Team
-  link: /team
 - name: Home
   link: /
-- name: Daniel
-  link: /team/daniel
+- name: Team
+  link: /team

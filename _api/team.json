@@ -1,0 +1,10 @@
+---
+---
+[
+  {% for person in site.team %}{
+    "name": "{{ person.name }}",
+    "title": "{{ person.title }}",
+    "headshot": "{{ person.headshot }}"
+  }{% unless forloop.last %},
+  {% endunless %}{% endfor %}
+]

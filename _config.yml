@@ -3,6 +3,8 @@ title: Costello
 collections: 
   team:
     output: true
+  api:
+    output: true
 
 defaults:
   -

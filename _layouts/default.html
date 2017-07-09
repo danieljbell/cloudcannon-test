@@ -5,6 +5,15 @@
   <title>Document</title>
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        {% for link in site.data.header-nav %}
+          <li><a href="{{link.link}}">{{link.name}}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
   <div data-cms-content-wrapper="/_layouts/default.html">
       {{content}}
   </div>

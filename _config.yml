@@ -1,6 +1,12 @@
 title: Costello
 
-collections: 
+incremental: true
+
+port: 8080
+
+collections:
+  posts:
+    permalink: /:categories/:title/
   team:
     output: true
   api:
@@ -13,5 +19,9 @@ defaults:
       type: "team"
     values:
       layout: "team-member"
-      _defaults:
-        job_title: "insert job title here"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "blog-post"

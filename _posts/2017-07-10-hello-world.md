@@ -1,6 +1,6 @@
 ---
 title: Hello World
-image: //unsplash.it/700/466
+image: https://unsplash.it/700/466
 ---
 
 # Hello World

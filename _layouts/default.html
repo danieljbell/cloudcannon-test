@@ -5,7 +5,18 @@
   <title>Document</title>
   {% seo %}
 </head>
-<body>
+{% if page.url == '/' %}
+  <body class="home">
+{% elsif page.path contains 'team' %}
+  {% if page.path contains '_team' %}
+    <body class="single-team">
+  {% else %}
+    <body class="archive-team">
+  {% endif %}
+{% else %}
+  <body>
+{% endif %}
+
   <header>
     <nav>
       <ul>
@@ -15,7 +26,7 @@
       </ul>
     </nav>
   </header>
-  <div data-cms-content-wrapper="/_layouts/default.html">
+  <div>
       {{content}}
   </div>
 </body>

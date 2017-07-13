@@ -1,14 +1,17 @@
 title: Costello
 
-incremental: true
+# incremental: true
+
+# permalink: pretty
 
 port: 8080
 
 collections:
   posts:
-    permalink: /:categories/:title/
+    permalink: /blog/:categories/:title/
   team:
     output: true
+    permalink: /:collection/:name
   api:
     output: true
 

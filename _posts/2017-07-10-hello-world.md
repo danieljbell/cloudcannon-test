@@ -1,6 +1,7 @@
 ---
 title: Hello World
 image: 'https://unsplash.it/700/466'
+categories: Sales
 ---
 
 

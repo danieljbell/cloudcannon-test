@@ -1,6 +1,6 @@
 title: Costello
 
-# incremental: true
+incremental: true
 
 # permalink: pretty
 
@@ -12,8 +12,9 @@ collections:
   team:
     output: true
     permalink: /:collection/:name
-  api:
+  videos:
     output: true
+    permalink: /:collection/:name
 
 defaults:
   -
@@ -28,3 +29,9 @@ defaults:
       type: "posts"
     values:
       layout: "blog-post"
+  -
+    scope:
+      path: ""
+      type: "videos"
+    values:
+      layout: "videos"    

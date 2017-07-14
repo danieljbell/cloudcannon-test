@@ -1,8 +1,19 @@
 ---
 layout: default
 ---
-<img src="{{page.image}}" alt="{{page.title}}">
-<h1>blog post!</h1>
-<div class="blog-content editable">
-  {{content}}
-</div>
+<article>
+  <header class="hero">
+    <img src="{{page.image}}" alt="{{page.title}}">
+    <h1>{{page.title}}</h1>
+    <p class="subhead">{{page.description}}</p>
+  </header>
+  <section class="blog-meta-container">
+    <ul class="blog-meta-list">
+      <li class="blog-author">By: {{page.author}}</li>
+      <li class="blog-date">May 9, 2017</li>
+    </ul>
+  </section>
+  <section class="blog-content editable">
+    {{content}}
+  </section>
+</article>

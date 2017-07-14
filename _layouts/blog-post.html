@@ -27,9 +27,13 @@ layout: default
   <section class="social-sharing">
     <h4>Share this Article:</h4>
     <ul class="social-sharing-links">
-      <li><a href="">Facebook</a></li>
-      <li><a href="">Twitter</a></li>
-      <li><a href="">LinkedIn</a></li>
+
+      <li>
+        <div class="fb-share-button" data-href="{{page.url}}" data-layout="button_count"></div>
+      </li>
+      <li><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{page.title}}%20|%20{{page.description}}&url={{site.url}}{{page.url}}" target="_blank" rel="noopener noreferrer">Tweet</a></li>
+      <li><a href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{page.title}}&summary={{page.description}}&source={{site.url}}" target="_blank" rel="noopener noreferrer">asd</a></li>
     </ul>
   </section>
 </article>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

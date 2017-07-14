@@ -15,6 +15,9 @@ collections:
   videos:
     output: true
     permalink: /:collection/:name
+  press:
+    output: true
+    permalink: /:collection/:name  
 
 defaults:
   -
@@ -35,4 +38,11 @@ defaults:
       path: ""
       type: "videos"
     values:
-      layout: "videos"    
+      layout: "videos"
+  -
+    scope:
+      path: ""
+      type: "press"
+    values:
+      layout: "press"            
+      internal: true

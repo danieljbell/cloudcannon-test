@@ -45,4 +45,5 @@ defaults:
       type: "press"
     values:
       layout: "press"            
-      internal: true
+      _defaults:
+        internal: true

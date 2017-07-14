@@ -44,6 +44,4 @@ defaults:
       path: ""
       type: "press"
     values:
-      layout: "press"            
-      _defaults:
-        internal: true
+      layout: "press"

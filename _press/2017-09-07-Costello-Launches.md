@@ -1,4 +1,0 @@
----
-
----
-Costello has officially launched!

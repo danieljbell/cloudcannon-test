@@ -12,3 +12,5 @@ categories:
 This line was added with the visual editor in cloudcannon.
 
 This is a sample post. It’s used as a placeholder. Delete this post as soon as a new post is ready to be published.
+
+![](/uploads/versions/docgen-twitter-adv-1200x675---x----1200-675x---.jpg)

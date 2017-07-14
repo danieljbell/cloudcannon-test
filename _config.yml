@@ -1,6 +1,6 @@
 title: Costello
 
-incremental: true
+# incremental: true
 
 # permalink: pretty
 
@@ -29,6 +29,11 @@ defaults:
       type: "posts"
     values:
       layout: "blog-post"
+      author: 
+        - Daniel Bell
+        - Dora Bell
+        - Kirsten Bell
+        - Noah Bell
   -
     scope:
       path: ""

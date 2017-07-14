@@ -9,7 +9,13 @@ layout: default
   </header>
   <section class="blog-meta-container">
     <ul class="blog-meta-list">
-      <li class="blog-author">By: {{page.author}}</li>
+      <li class="blog-author">By: 
+        {% for author in site.team %}
+          {% if author.name == page.author %}
+            {{author.name}}
+          {% endif %}
+        {% endfor %}
+      </li>
       <li class="blog-date">May 9, 2017</li>
     </ul>
   </section>

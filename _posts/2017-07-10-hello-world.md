@@ -1,8 +1,6 @@
 ---
 title: Hello World
 description: This is a sample description
-collections: 
-  - authors
 image: 'https://unsplash.it/700/466'
 categories:
   - Sales

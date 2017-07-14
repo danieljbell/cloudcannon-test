@@ -1,7 +1,7 @@
 ---
 name: Kirsten Bell
 position: HBIC
-headshot: //fillmurray.com/400/400
+headshot: //unsplash.it/200/200
 ---
 
 

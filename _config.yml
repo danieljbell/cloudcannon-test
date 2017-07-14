@@ -29,6 +29,7 @@ defaults:
       type: "posts"
     values:
       layout: "blog-post"
+      author: "Kirsten Bell"
   -
     scope:
       path: ""

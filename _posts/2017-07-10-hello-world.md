@@ -2,6 +2,7 @@
 title: Hello World
 description: This is a sample description
 image: 'https://unsplash.it/700/466'
+author: Daniel Bell
 categories:
   - Sales
   - Marketing

@@ -1,18 +1,20 @@
 header:
   - title: Home
+    url: /
   - title: Resources
+    url: /resources/
     subfolderitems:
       - page: Blog
-        url: /resources/blog
+        url: /resources/blog/
       - page: Press
-        url: /resources/press
+        url: /resources/press/
       - page: Videos
-        url: /resources/videos
-  - title: Group 3
-    subfolderitems:
-      - page: Widget 1
-        url: /widget1.html
-      - page: Widget 2
-        url: /widget2.html
-      - page: Widget 3
-        url: /widget3.html
+        url: /resources/videos/
+
+resources:
+  - title: Blog
+    url: /resources/blog/
+  - title: Press
+    url: /resources/press/
+  - title: Videos
+    url: /resources/videos/        

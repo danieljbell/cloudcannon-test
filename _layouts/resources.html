@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{% include hero.html %}
+<section class="resource-navigation">
+  <nav>
+    <ul>
+      {% for item in site.data.navigation.resources %}
+        <li {% if item.url == page.url %}class="active"{% endif %}><a href="{{item.url}}">{{item.title}}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</section>
+
+{% if page.path contains 'blog' %}
+  <div class="third">
+    {% for item in site.posts %}
+      {% include card.html %}
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% assign my_page = page.title | downcase %}
+<div class="third">
+  {% for item in site.[my_page] %}
+    {% unless item.url == page.url %}
+        {% include card.html %}
+    {% endunless %}
+  {% endfor %}
+</div>

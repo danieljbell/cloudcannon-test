@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  
   {% if page.title %}
     {% if page.name %}
       <title>Costello | {{page.name | remove: '.html' | capitalize }}</title>
@@ -11,46 +12,16 @@
   {% else %}
     <title>Costello</title>
   {% endif %}
+
   {% include social-meta.html %}
+
 </head>
-{% if page.url == '/' %}
-  <body class="home">
-{% elsif page.path contains 'team' %}
-  {% if page.path contains '_team' %}
-    <body class="single-team">
-  {% else %}
-    <body class="archive-team">
-  {% endif %}
-{% elsif page.path contains '_posts' %}
-  <body class="single-blog">
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-{% elsif page.path contains 'press' %}    
-  {% if page.path contains '_press' %}
-    <body class="single-press">
-  {% else %}
-    <body class="archive-press">
-  {% endif %}
-{% else %}
-  <body>
-{% endif %}
+
+{% include body-class.html %}
 
   <header>
     <nav>
-      {% for item in site.data.navigation.header %}
-        <h3>{{ item.title }}</h3>
-          <ul>
-            {% for entry in item.subfolderitems %}
-              <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
-            {% endfor %}
-          </ul>
-      {% endfor %}
+      {% include header-navigation.html %}
     </nav>
   </header>
   <main>

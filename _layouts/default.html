@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Document</title>
+  {% if page.title %}
+    {% if page.name %}
+      <title>Costello | {{page.name | remove: '.html' | capitalize }}</title>
+    {% else %}
+      <title>Costello | {{page.title}}</title>
+    {% endif %}
+  {% else %}
+    <title>Costello</title>
+  {% endif %}
   {% include social-meta.html %}
 </head>
 {% if page.url == '/' %}
@@ -35,11 +43,14 @@
 
   <header>
     <nav>
-      <ul>
-        {% for link in site.data.header-nav %}
-          <li><a href="{{link.link}}">{{link.name}}</a></li>
-        {% endfor %}
-      </ul>
+      {% for item in site.data.navigation.header %}
+        <h3>{{ item.title }}</h3>
+          <ul>
+            {% for entry in item.subfolderitems %}
+              <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+            {% endfor %}
+          </ul>
+      {% endfor %}
     </nav>
   </header>
   <main>

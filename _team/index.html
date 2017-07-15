@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<ul>
+  {% for person in site.team %}
+    {% unless person.url == page.url %}
+      <li><a href="{{person.url}}">{{person.name}}</a></li>
+    {% endunless %}
+  {% endfor %}
+</ul>

@@ -23,6 +23,12 @@
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+{% elsif page.path contains 'press' %}    
+  {% if page.path contains '_press' %}
+    <body class="single-press">
+  {% else %}
+    <body class="archive-press">
+  {% endif %}
 {% else %}
   <body>
 {% endif %}

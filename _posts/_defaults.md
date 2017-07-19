@@ -8,4 +8,6 @@ advertisment_image: https://fillmurray.com/728/90
 category:
   - Sales
   - Marketing
+_comments:
+  author: Match this text field with the name of the author (case sensitive) in the team collection.
 ---

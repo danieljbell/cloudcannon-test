@@ -1,0 +1,53 @@
+.card {
+  position: relative;
+  padding: 1rem;
+  min-height: 35vh;
+  background-size: cover;
+  background-position: center center;
+  color: $white;
+  border-radius: 3px;
+}
+
+.card-content {
+  // border: 2px solid red;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 2rem 1rem 1rem;
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.85));
+  border-radius: 0 0 3px 3px;
+}
+
+.card-tag {
+  display: inline-block;
+  background-color: $brand-four;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  color: $white;
+  padding: 0.25rem 0.35rem;
+  margin-bottom: 0.25rem;
+}
+
+.card-title {
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.65);
+}
+
+.card-description {
+  font-size: 0.85rem;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.65);
+  opacity: 0;
+}
+
+.card-link {
+  @extend .btn-primary;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translate(-50%);
+}

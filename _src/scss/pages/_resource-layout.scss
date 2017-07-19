@@ -1,0 +1,34 @@
+.resource-navigation ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.resource-navigation li {
+  margin: 0 1rem;
+}
+
+.resource-navigation a {
+  display: inline-block;
+  padding: 0.65rem 1rem;
+  border: 1px solid $black;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.resource-navigation .active a {
+  background-color: $brand;
+  color: $white;
+  border-color: transparent;
+}
+
+.resource-grid {
+  padding-top: 0;
+}
+
+.resource-grid ul {
+  margin-bottom: 0;
+}

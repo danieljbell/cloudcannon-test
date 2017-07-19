@@ -3,52 +3,39 @@ layout: default
 ---
 <article>
   {% include hero.html %}
-  <section class="blog-meta-container">
-    <ul class="blog-meta-list">
-      {% for author in site.team %}
-        {% if author.name == page.author %}
-          <li class="blog-author">
-            <div class="author-image">
-              <img src="{{author.headshot}}" alt="{{author.name}}'s Headshot">
-            </div>
-            <div class="author-details">By: {{author.name}}</div>
-          </li>
-        {% endif %}
-      {% endfor %}
-      <li class="blog-date">Published on: {{page.date | date: "%B %d, %Y"}}</li>
-    </ul>
-  </section>
-  <section class="blog-content">
-    <div class="two-third">
-      <article>
-        {{content}}
-      </article>
-      <aside>
-        <h3>Related Blog Posts</h3>
-        <ul>
-          {% assign my_cat = page.categories[0] %}
-          {% for post in site.categories.[my_cat] limit: 3 %}
-            {% unless post.url == page.url %}
-              <li><a href="{{post.url}}" title="{{post.title}}">{{post.title}}</a></li>
-            {% endunless %}
-          {% endfor %}
-        </ul>
-      </aside>
-    </div>
-  </section>
-  <section class="call-to-action">
-    <a href="{{page.advertisment_link}}"><img src="{{page.advertisment_image}}" alt="Advertisement"></a>
-  </section>
-  <section class="social-sharing">
-    <h4>Share this Article:</h4>
-    <ul class="social-sharing-links">
-
-      <li>
-        <div class="fb-share-button" data-href="{{page.url}}" data-layout="button_count"></div>
-      </li>
-      <li><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{page.title}}%20|%20{{page.description}}&url={{site.url}}{{page.url}}" target="_blank" rel="noopener noreferrer">Tweet</a></li>
-      <li><a href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{page.title}}&summary={{page.description}}&source={{site.url}}" target="_blank" rel="noopener noreferrer">asd</a></li>
-    </ul>
-  </section>
+  
+  <div class="site-width">
+    <section class="blog-content">
+      <div class="two-third">
+        <article>
+          {{content}}
+        </article>
+        <aside>
+          <div class="social-sharing">
+            <h4>Share this Article:</h4>
+            <ul class="social-sharing-links">
+              <li>
+                <div class="fb-share-button" data-href="{{page.url}}" data-layout="button_count"></div>
+              </li>
+              <li><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{page.title}}%20|%20{{page.description}}&url={{site.url}}{{page.url}}" target="_blank" rel="noopener noreferrer">Tweet</a></li>
+              <li><a href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{page.title}}&summary={{page.description}}&source={{site.url}}" target="_blank" rel="noopener noreferrer">asd</a></li>
+            </ul>
+          </div>
+          <h4>Related Blog Posts</h4>
+          <ul>
+            {% assign my_cat = page.categories[0] %}
+            {% for post in site.categories.[my_cat] limit: 3 %}
+              {% unless post.url == page.url %}
+                <li><a href="{{post.url}}" title="{{post.title}}">{{post.title}}</a></li>
+              {% endunless %}
+            {% endfor %}
+          </ul>
+        </aside>
+      </div>
+    </section>
+    <section class="call-to-action">
+      <a href="{{page.advertisment_link}}"><img src="{{page.advertisment_image}}" alt="Advertisement"></a>
+    </section>
+  </div>
 </article>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

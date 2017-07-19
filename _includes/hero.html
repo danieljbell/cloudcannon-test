@@ -1,5 +1,28 @@
 <header class="hero">
-  <img src="{{page.image}}" alt="{{page.title}}">
-  <h1>{{page.title}}</h1>
-  <p class="subhead">{{page.description}}</p>
+  <img src="{{page.image}}" alt="{{page.title}}" class="hero-image">
+  <h1 class="hero-title">{{page.title}}</h1>
+  <p class="hero-subtitle">{{page.description}}</p>
+  {% if page.path contains '_posts' %}
+    <div class="blog-meta-container">
+      <ul class="blog-meta-list">
+        <li class="blog-date">{{page.date | date: "%B %d, %Y"}}</li>
+        {% for author in site.team %}
+          {% if author.name == page.author %}
+            <li class="blog-author">
+              <div class="author-image">
+                <img src="{{author.headshot}}" alt="{{author.name}}'s Headshot">
+              </div>
+              <div class="author-details">
+                <span class="author-name">{{author.name}}</span>
+                <ul class="author-social">
+                  <li><a href="">TW</a></li>
+                  <li><a href="">LI</a></li>
+                </ul>
+              </div>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
 </header>

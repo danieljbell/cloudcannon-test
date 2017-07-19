@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
+
 {% include hero.html %}
+
 <section class="resource-navigation">
   <nav>
     <ul>
@@ -12,19 +14,25 @@ layout: default
   </nav>
 </section>
 
-{% if page.path contains 'blog' %}
-  <div class="third">
-    {% for item in site.posts %}
-      {% include card.html %}
-    {% endfor %}
-  </div>
-{% endif %}
+<section class="resource-grid">
+  <div class="site-width">
+    
+    {% if page.path contains 'blog' %}
+      <ul class="third">
+        {% for item in site.posts %}
+          {% include card.html %}
+        {% endfor %}
+      </ul>
+    {% endif %}
 
-{% assign my_page = page.title | downcase %}
-<div class="third">
-  {% for item in site.[my_page] %}
-    {% unless item.url == page.url %}
-        {% include card.html %}
-    {% endunless %}
-  {% endfor %}
-</div>
+    {% assign my_page = page.title | downcase %}
+    <ul class="third">
+      {% for item in site.[my_page] %}
+        {% unless item.url == page.url %}
+            {% include card.html %}
+        {% endunless %}
+      {% endfor %}
+    </ul>
+
+  </div>
+</section>

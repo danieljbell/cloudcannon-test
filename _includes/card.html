@@ -1,6 +1,8 @@
-<div class="card">
-  <a href="{{item.url}}" title="{{item.name}}"><img src="{{item.image}}" alt="{{item.url}}"></a>
-  <h4><a href="{{item.url}}" title="{{item.name}}">{{item.title}}</a></h4>
-  <p>{{item.description}}</p>
-  <a href="{{item.url}}" title="{{item.name}}">Learn More</a>
-</div>
+<li class="card" style="background-image: url({{item.image}});">
+  <div class="card-content">
+    <p class="card-tag">Cat Name</p>
+    <h4 class="card-title">{{item.title}}</h4>
+    <p class="card-description">{{item.description}}</p>
+    <a href="{{item.url}}" title="{{item.name}}" class="card-link">Read More</a>
+  </div>
+</li>

@@ -1,0 +1,48 @@
+$white: #fff;
+$black: #363636;
+$brand: #007c04;
+$brand-two: #f7da68;
+$brand-three: #a16479;
+$brand-four: #6686c3;
+
+/*
+========================
+BREAKPOINTS
+========================
+*/
+$breakpoints: (
+  xs: 0px,
+  sm: 600px,
+  md: 767px,
+  lg: 1050px,
+  xl: 1280px,
+  xxl: 1440px
+) !default;
+
+
+/*
+============================================
+CREATE MEDIA QUERY
+============================================
+*/ 
+@mixin bp($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+@import 'base/_reset',
+        'base/_typography',
+        'base/_grid',
+        'modules/_buttons',
+        'modules/_card',
+        'modules/_hero',
+        'pages/_blog-single',
+        'pages/_resource-layout';

@@ -1,0 +1,26 @@
+body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: $black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+ul {
+  list-style-type: initial;
+  padding-left: 2.5rem;
+  margin-bottom: 2rem;
+}

@@ -39,11 +39,6 @@ defaults:
       type: "posts"
     values:
       layout: "blog-post"
-      author: 
-        Daniel Bell: Daniel Bell
-        Kirsten Bell: Kirsten Bell
-        Noah Bell: Noah Bell
-        Dora Bell: Dora Bell
   -
     scope:
       path: ""

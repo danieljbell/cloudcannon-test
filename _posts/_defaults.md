@@ -1,9 +1,6 @@
 ---
-author:
-  Daniel Bell: Daniel Bell
-  Kirsten Bell: Kirsten Bell
-  Noah Bell: Noah Bell
-  Dora Bell: Dora Bell
+collections:
+  - team
 title: A New Post
 description: A short description
 image: https://unsplash.it/700/466

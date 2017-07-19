@@ -18,8 +18,20 @@ layout: default
       <li class="blog-date">Published on: {{page.date | date: "%B %d, %Y"}}</li>
     </ul>
   </section>
-  <section class="blog-content editable">
-    {{content}}
+  <section class="blog-content">
+    <div class="two-third">
+      <article>
+        {{content}}
+      </article>
+      <aside>
+        <h3>Recent Blog Posts</h3>
+        <ul>
+          {% for post in site.related_posts %}
+            <li><a href="{{post.url}}" title="{{post.title}}">{{post.title}}</a></li>
+          {% endfor %}
+        </ul>
+      </aside>
+    </div>
   </section>
   <section class="call-to-action">
     <a href="{{page.advertisment_link}}"><img src="{{page.advertisment_image}}" alt="Advertisement"></a>

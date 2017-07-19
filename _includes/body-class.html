@@ -1,13 +1,10 @@
 {% if page.url == '/' %}
   <body class="home">
-{% elsif page.path contains 'team' %}
-  {% if page.path contains '_team' %}
-    <body class="single-team">
+{% elsif page.url contains 'blog' %}
+  {% if page.url == '/resources/blog/' %}
+    <body class="archive-blog">
   {% else %}
-    <body class="archive-team">
-  {% endif %}
-{% elsif page.path contains '_posts' %}
-  <body class="single-blog">
+    <body class="single-blog">
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -16,11 +13,24 @@
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-{% elsif page.path contains 'press' %}    
-  {% if page.path contains '_press' %}
-    <body class="single-press">
+  {% endif %}
+{% elsif page.url contains 'videos' %}
+  {% if page.url == '/resources/videos/' %}
+    <body class="archive-videos">
   {% else %}
+    <body class="single-videos">
+  {% endif %}
+{% elsif page.url contains 'press' %}
+  {% if page.url == '/resources/press/' %}
     <body class="archive-press">
+  {% else %}
+    <body class="single-press">
+  {% endif %}
+{% elsif page.url contains 'team' %}
+  {% if page.url == '/team/' %}
+    <body class="archive-team">
+  {% else %}
+    <body class="single-team">
   {% endif %}
 {% else %}
   <body>

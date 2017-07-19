@@ -5,7 +5,7 @@ image: 'https://unsplash.it/700/466'
 author: Richard Hendricks
 advertisment_link: 'https://google.com'
 advertisment_image: 'https://fillmurray.com/728/90'
-categories:
+category:
   - Sales
 ---
 

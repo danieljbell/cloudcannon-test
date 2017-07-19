@@ -7,7 +7,9 @@
 <meta property="og:locale" content="en_US" />
 {% if page.path contains '_posts' %}
   <meta property="og:type" content="article" />
-  {% else %}
+{% elsif page.path contains '_videos' %}
+  <meta property="og:type" content="video" />
+{% else %}
   <meta property="og:type" content="website" />
 {% endif %}
 <meta property="og:title" content="{{page.title}}" />

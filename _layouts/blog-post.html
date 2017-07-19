@@ -24,10 +24,13 @@ layout: default
         {{content}}
       </article>
       <aside>
-        <h3>Recent Blog Posts</h3>
+        <h3>Related Blog Posts</h3>
         <ul>
-          {% for post in site.categories.[page.category] %}
-            <li><a href="{{post.url}}" title="{{post.title}}">{{post.title}}</a></li>
+          {% assign my_cat = page.categories[0] %}
+          {% for post in site.categories.[my_cat] limit: 3 %}
+            {% unless post.url == page.url %}
+              <li><a href="{{post.url}}" title="{{post.title}}">{{post.title}}</a></li>
+            {% endunless %}
           {% endfor %}
         </ul>
       </aside>

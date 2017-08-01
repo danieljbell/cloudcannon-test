@@ -1,0 +1,113 @@
+.lp-container {
+  margin-top: 4.5rem;
+  margin-bottom: -3rem;
+}
+@media screen and (min-width: 768px) {
+  .lp-container {
+    margin-bottom: -5rem;
+  } 
+}
+
+.lp-container > section {
+  padding: 3rem 12vw;
+}
+@media screen and (min-width: 470px) {
+  .lp-container > section {
+    padding: 3rem 5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lp-container > section {
+    padding: 3rem 8rem 5rem;
+  }
+}
+
+.hero {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), linear-gradient(to right, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.5)), url(//fillmurray.com/1920/450);
+  background-size: cover;
+  color: #fff;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.65);
+}
+
+.green-blob,
+.blue-blob {
+  position: relative;
+  z-index: 1;
+}
+.green-blob:before,
+.blue-blob:before {
+  content: '';
+  background-image: url(/assets/images/home/intro-bg.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top: -8rem;
+  right: 0;
+  left: -8rem;
+  bottom: -4rem;
+  width: calc(100% + 8rem);
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+}
+.blue-blob:before {
+  background-image: url(/assets/images/home/discovery-bg.png);
+}
+
+.hero h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+.hero p:last-of-type {
+  margin-bottom: 3rem;
+}
+
+
+.lp-button,
+#contact input[type="submit"] {
+  height: auto;
+  color: #fff;
+  font-weight: bold;
+  background-color: #66AF68;
+  padding: 0.75rem 1.5rem;
+  text-shadow: none;
+  border-radius: 5px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+blockquote {
+  border: 1px solid #D0D2D3;
+  border-radius: 5px;
+  box-shadow: 0 1px 15px rgba(0,0,0,0.07);
+}
+
+blockquote > * {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #fff;
+}
+
+blockquote .person-headshot {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10rem;
+}
+
+form {
+  margin-top: 3rem;
+}
+

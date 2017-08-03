@@ -20,12 +20,10 @@
   {% else %}
     <body class="single-videos">
   {% endif %}
-{% elsif page.url contains 'press' %}
-  {% if page.url == '/resources/press/' %}
+{% elsif page.url contains 'press' and page.url == '/press/' %}
     <body class="archive-press">
-  {% else %}
+{% elsif page.url contains 'press' and page.url != '/press/' %}
     <body class="single-press">
-  {% endif %}
 {% elsif page.url contains 'team' %}
   {% if page.url == '/team/' %}
     <body class="archive-team">

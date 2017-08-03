@@ -5,16 +5,16 @@ header:
     url: /resources/
     subfolderitems:
       - page: Blog
-        url: /resources/blog/
+        url: /blog/
       - page: Press
-        url: /resources/press/
+        url: /press/
       - page: Videos
-        url: /resources/videos/
+        url: /videos/
 
 resources:
   - title: Blog
-    url: /resources/blog/
+    url: /blog/
   - title: Press
-    url: /resources/press/
+    url: /press/
   - title: Videos
-    url: /resources/videos/        
+    url: /videos/        

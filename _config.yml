@@ -15,16 +15,16 @@ port: 8080
 
 collections:
   posts:
-    permalink: /resources/blog/:categories/:title/
+    permalink: /blog/:categories/:title/
   team:
     output: true
     permalink: /:collection/:name
   videos:
     output: true
-    permalink: /resources/:collection/:name
+    permalink: /:collection/:name
   press:
     output: true
-    permalink: /resources/:collection/:name  
+    permalink: /:collection/:name  
 
 defaults:
   -

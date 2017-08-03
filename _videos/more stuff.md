@@ -1,8 +1,8 @@
 ---
-title: Test Video
+title: Another Video Cat
 description: Demo video description
 category: 
-  - Demos
+  - Training
 video_id: lxUK6gCtSg0
 ---
 

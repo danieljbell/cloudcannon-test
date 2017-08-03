@@ -1,6 +1,7 @@
 $white: #fff;
+$light-gray: #D0D2D3;
 $black: #363636;
-$brand: #007c04;
+$brand: #66AF68;
 $brand-two: #f7da68;
 $brand-three: #a16479;
 $brand-four: #6686c3;
@@ -41,8 +42,11 @@ CREATE MEDIA QUERY
 @import 'base/_reset',
         'base/_typography',
         'base/_grid',
+        'modules/_blob',
         'modules/_buttons',
         'modules/_card',
         'modules/_hero',
         'pages/_blog-single',
-        'pages/_resource-layout';
+        'pages/_resource-layout',
+        'pages/_press-archive',
+        'pages/_press-single';

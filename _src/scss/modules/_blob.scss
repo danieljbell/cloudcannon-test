@@ -1,0 +1,12 @@
+.blue-blob {
+  position: relative;
+  z-index: 1;
+  &:after {
+    position: absolute;
+    top: -3rem; 
+    left: -3rem;
+    z-index: -1;
+    content: url(/img/blue-blob.svg);
+    width: 25vw;
+  }
+}

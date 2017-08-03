@@ -32,3 +32,24 @@
 .resource-grid ul {
   margin-bottom: 0;
 }
+
+.category-listing {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.category-listing a {
+  border-bottom: 1px solid #ccc;
+  display: block;
+  text-decoration: none;
+}
+
+.category-listing .active a {
+  background-color: $brand;
+  color: $white;
+  font-weight: bold;
+}
+
+.category-listing span {
+  float: right;
+}

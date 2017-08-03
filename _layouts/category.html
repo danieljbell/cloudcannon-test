@@ -1,11 +1,31 @@
 ---
 layout: default
 ---
-<h1>{{page.title}}</h1>
+{% include hero.html %}
+{% include resource-navigation.html %}
 
-
-<ul class="blog-grid">
-  {% for item in site.categories.[page.category] %}
-    {% include card.html %}
-  {% endfor %}
-</ul>
+<section class="resource-grid">
+  <div class="site-width">
+    <div class="one-fourth">
+      <ul class="half">
+        {% for item in site.categories.[page.category] %}
+          {% include card.html %}
+        {% endfor %}
+      </ul>
+      <div>
+        <h4>Categories</h4>
+        <ul class="category-listing">
+          {% for category in site.categories %}
+            {% assign my_cat = category[0] | downcase %}
+            {% if page.url contains my_cat %}
+              <li class="active">
+            {% else %}
+              <li>
+            {% endif %}
+            <a href="/blog/{{ my_cat }}">{{ category[0] }} <span> ({{ category[1].size }}) </span></a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

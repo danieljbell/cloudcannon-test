@@ -22,7 +22,7 @@
 
 .card-tag {
   display: inline-block;
-  background-color: $brand-four;
+  background-color: $brand;
   border-radius: 3px;
   text-transform: uppercase;
   font-size: 0.65rem;
@@ -31,23 +31,81 @@
   color: $white;
   padding: 0.25rem 0.35rem;
   margin-bottom: 0.25rem;
+  transition: all 200ms ease-out;
+  .card:hover & {
+    transform: translateY(-105%);
+  }
+  &.card-tag-brand-two {
+    color: $black;
+    background-color: $brand-two;
+  }
+  &.card-tag-brand-three {
+    background-color: $brand-three;
+  }
+  &.card-tag-brand-four {
+    background-color: $brand-four;
+  }
 }
 
 .card-title {
   text-shadow: 2px 2px 3px rgba(0,0,0,0.65);
+  color: $white;
+  transition: all 200ms ease-out;
+  .card:hover & {
+    transform: translateY(-100%);
+  }
 }
 
 .card-description {
+  color: $white;
   font-size: 0.85rem;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.65);
   opacity: 0;
+  transition: all 200ms ease-out;
+  transform: translateY(100%);
+  .card:hover & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card button {
+  opacity: 0;
+  transition: all 200ms ease-out;
+  margin-top: 1rem;
+  transform: translateY(100%);
+  .card:hover & {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .card-link {
-  @extend .btn-primary;
-  margin: 0 auto;
-  position: relative;
-  display: inline-block;
-  left: 50%;
-  transform: translate(-50%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+    .card:hover & {
+      opacity: 0.7;
+    }
+  }
+  
+  // @extend .btn-primary;
+  // margin: 0 auto;
+  // position: relative;
+  // display: inline-block;
+  // left: 50%;
+  // transform: translate(-50%);
 }

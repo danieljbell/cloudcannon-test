@@ -1,8 +1,15 @@
 <li class="card" style="background-image: url({{item.image}});">
-  <div class="card-content">
-    <p class="card-tag">Cat Name</p>
-    <h4 class="card-title">{{item.title}}</h4>
-    <p class="card-description">{{item.description}}</p>
-    <a href="{{item.url}}" title="{{item.name}}" class="card-link">Read More</a>
-  </div>
+  <a href="{{item.url}}" title="{{item.name}}" class="card-link">
+    <div class="card-content">
+      {% assign my_cat = item.category[0] | downcase %}
+      <p class="card-tag 
+      {% if my_cat == 'marketing' %}
+        card-tag-brand-three
+      {% endif %}
+      ">{{my_cat}}</p>
+      <h4 class="card-title">{{item.title}}</h4>
+      <p class="card-description">{{item.description}}</p>
+      <button class="btn-primary">Learn More</button>
+    </div>
+  </a>
 </li>

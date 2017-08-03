@@ -1,5 +1,7 @@
 <header class="hero">
-  <img src="{{page.image}}" alt="{{page.title}}" class="hero-image">
+  {% if page.image %}
+    <img src="{{page.image}}" alt="{{page.title}}" class="hero-image">
+  {% endif %}
   <h1 class="hero-title">{{page.title}}</h1>
   <p class="hero-subtitle">{{page.description}}</p>
   {% if page.path contains '_posts' %}
@@ -14,10 +16,16 @@
               </div>
               <div class="author-details">
                 <span class="author-name">{{author.name}}</span>
-                <ul class="author-social">
-                  <li><a href="">TW</a></li>
-                  <li><a href="">LI</a></li>
-                </ul>
+                {% if author.twitter or author.linkedin %}
+                  <ul class="author-social">
+                    {% if author.twitter %}
+                      <li><a href="{{author.twitter}}">TW</a></li>
+                    {% endif %}
+                    {% if author.linkedin %}
+                      <li><a href="{{author.linkedin}}">LI</a></li>
+                    {% endif %}
+                  </ul>
+                {% endif %}
               </div>
             </li>
           {% endif %}

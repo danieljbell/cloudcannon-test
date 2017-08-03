@@ -1,0 +1,9 @@
+<section class="resource-navigation">
+  <nav>
+    <ul>
+      {% for item in site.data.navigation.resources %}
+        <li {% if page.url contains item.url %}class="active"{% endif %}><a href="{{item.url}}">{{item.title}}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</section>

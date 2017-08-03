@@ -14,7 +14,10 @@ header:
 resources:
   - title: Blog
     url: /blog/
+    icon: /img/blog-icon.svg
   - title: Press
     url: /press/
+    icon: /img/press-icon.svg
   - title: Videos
     url: /videos/        
+    icon: /img/video-icon.svg

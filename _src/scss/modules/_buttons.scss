@@ -1,8 +1,23 @@
-.btn-primary {
-  background-color: $brand;
-  color: $white;
+%btn {
   padding: 0.5rem 0.85rem;
   text-decoration: none;
   border-radius: 3px;
-  text-align: center;
+  text-align: center;  
+  transition: all 200ms ease-out;
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: $brand;
+  color: $white;
+  &-outline {
+    @extend %btn;
+    border: 1px solid $brand;
+    color: $brand;
+    &:hover,
+    &:focus {
+      background-color: $brand;
+      color: $white;
+    }
+  }
 }

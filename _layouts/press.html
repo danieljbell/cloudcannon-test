@@ -9,8 +9,6 @@ layout: default
       <div class="two-third">
         <article class="blue-blob">
           {{content}}
-          <h3>About Costello</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aliquid eligendi pariatur totam commodi sequi dolor obcaecati, officia repellat, non dolores magni, aut. Repellendus, praesentium. Eius aliquid eligendi pariatur totam commodi sequi dolor obcaecati.</p>
         </article>
         <aside>
           <h4>Related Press</h4>
@@ -21,9 +19,19 @@ layout: default
               {% endunless %}
             {% endfor %}
           </ul>
-          <a href="/press/" class="btn-primary">View All Releases</a>
+          <a href="/press/" class="btn-primary-outline">View All Releases</a>
         </aside>
+      </div>
+    </section>
+    <section class="costello-boilerplate">
+      <div class="two-third">
+        <div>
+          <h3>About Costello</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aliquid eligendi pariatur totam commodi sequi dolor obcaecati, officia repellat, non dolores magni, aut. Repellendus, praesentium. Eius aliquid eligendi pariatur totam commodi sequi dolor obcaecati.</p>
+        </div>
       </div>
     </section>
   </div>
 </article>
+
+{% include footer.html %}

@@ -14,6 +14,7 @@
 .resource-navigation {
   path {
     fill: $brand;
+    transition: all 200ms ease-out;
   }
   .active path {
     fill: $white;
@@ -23,10 +24,15 @@
 .resource-navigation a {
   display: flex;
   padding: 0.75rem 3rem;
+  &:hover path,
+  &:focus path {
+    fill: $white;
+  }
 }
 
 .resource-navigation .active a {
   padding: 0.75rem 3rem;
+  font-weight: bold;
 }
 
 .resource-icon-container {
@@ -42,25 +48,4 @@
 
 .resource-grid ul {
   margin-bottom: 0;
-}
-
-.category-listing {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.category-listing a {
-  border-bottom: 1px solid #ccc;
-  display: block;
-  text-decoration: none;
-}
-
-.category-listing .active a {
-  background-color: $brand;
-  color: $white;
-  font-weight: bold;
-}
-
-.category-listing span {
-  float: right;
 }

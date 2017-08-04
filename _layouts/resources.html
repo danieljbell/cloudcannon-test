@@ -17,18 +17,7 @@ layout: default
           {% endfor %}
         </ul>
         <div>
-          <h4>Categories</h4>
-          <ul>
-            {% for category in site.categories %}
-              {% assign my_cat = category[0] | downcase %}
-              {% if page.url contains my_cat %}
-                <li class="active">
-              {% else %}
-                <li>
-              {% endif %}
-              <a href="/blog/{{ my_cat }}">{{ category[0] }} <span> ({{ category[1].size }}) </span></a></li>
-            {% endfor %}
-          </ul>
+          {% include category-listing.html %}
         </div>
       </div>
     {% elsif page.url == '/resources/' %}
@@ -40,14 +29,19 @@ layout: default
       {% include press-release-listing.html %}
       
     {% else %}
-      {% assign my_page = page.title | downcase %}
-      <ul class="third">
+    <div class="one-fourth">
+      <ul class="half">
+        {% assign my_page = page.title | downcase %}
         {% for item in site.[my_page] %}
           {% unless item.url == page.url %}
               {% include card.html %}
           {% endunless %}
         {% endfor %}
       </ul>
+      <div>
+        {% include category-listing.html %}
+      </div>
+    </div>
     {% endif %}
 
   </div>

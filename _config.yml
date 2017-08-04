@@ -21,10 +21,10 @@ collections:
     permalink: /:collection/:name
   videos:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:categories/:title
   press:
     output: true
-    permalink: /:collection/:name  
+    permalink: /:collection/:title
 
 defaults:
   -

@@ -1,0 +1,39 @@
+.category-listing {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.category-listing-heading {
+  padding: 0 0.5rem 0.5rem;
+}
+
+.category-listing a {
+  border-bottom: 1px solid #ccc;
+  padding: 0.25rem 0.5rem;
+  display: block;
+  text-decoration: none;
+  transition: all 200ms ease-out;
+  box-shadow: inset 0px 0 $brand-two;
+  &:hover {
+    color: $white;
+    box-shadow: inset 26vw 0 $brand-two;
+  }
+}
+
+.category-listing .active a {
+  border-bottom-color: $white;
+  background-color: $brand;
+  color: $white;
+  font-weight: bold;
+  &:hover {
+    box-shadow: inset 0px 0 $brand-two;
+  }
+}
+
+.category-listing span {
+  float: right;
+}
+
+.category-listing li:last-child a {
+  border-bottom: 0;
+}

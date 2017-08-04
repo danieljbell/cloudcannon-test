@@ -8,23 +8,19 @@ layout: default
   <div class="site-width">
     <div class="one-fourth">
       <ul class="half">
-        {% for item in site.categories.[page.category] %}
-          {% include card.html %}
-        {% endfor %}
+        {% if page.url contains 'blog' %}
+          {% for item in site.categories.[page.category] %}
+            {% include card.html %}
+          {% endfor %}
+        {% endif %}
+        {% if page.url contains 'videos' %}
+          {% for item in site.videos %}
+          
+          {% endfor %}
+        {% endif %}
       </ul>
       <div>
-        <h4>Categories</h4>
-        <ul class="category-listing">
-          {% for category in site.categories %}
-            {% assign my_cat = category[0] | downcase %}
-            {% if page.url contains my_cat %}
-              <li class="active">
-            {% else %}
-              <li>
-            {% endif %}
-            <a href="/blog/{{ my_cat }}">{{ category[0] }} <span> ({{ category[1].size }}) </span></a></li>
-          {% endfor %}
-        </ul>
+        {% include category-listing.html %}
       </div>
     </div>
   </div>

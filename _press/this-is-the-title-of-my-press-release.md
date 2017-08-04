@@ -1,4 +1,5 @@
 ---
+title: Bob's Burgers
 internal: true
 description: This is the sub-title of my press release
 ---

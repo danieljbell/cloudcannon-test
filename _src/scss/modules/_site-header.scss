@@ -55,6 +55,7 @@
   }
   .nav-links {
     flex-direction: column;
+    z-index: 2;
     @include bp(sm) {
       flex-direction: row;
     }

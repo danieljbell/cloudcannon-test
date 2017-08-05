@@ -1,6 +1,9 @@
 header:
-  - title: Home
-    url: /
+  - title: Why Costello
+    url: /why/
+  - title: About Us
+    url: /about/
+  - title: Customer Success
   - title: Resources
     url: /resources/
     subfolderitems:

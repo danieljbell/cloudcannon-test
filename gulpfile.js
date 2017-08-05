@@ -30,9 +30,21 @@ gulp.task('css', function () {
 
 gulp.task('watch', function() {
   gulp.watch('_src/scss/**/*.scss', ['css']);
-  // gulp.watch('src/js/app.js', ['js']);
+  gulp.watch('_src/js/**/*.js', ['js']);
+});
+
+gulp.task('js', function () {
+  gulp.src([
+      '_src/js/site-header.js'
+    ])
+    .pipe(sourcemaps.init())
+    .pipe(concat('app.js'))
+    .pipe(uglify())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./js'))
+    .pipe(browserSync.stream());
 });
 
 
 // gulp.task('default', ['watch', 'browser-sync']);
-gulp.task('default', ['watch']);
+gulp.task('default', ['css', 'js', 'watch']);

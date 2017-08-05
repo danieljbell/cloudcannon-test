@@ -1,0 +1,163 @@
+.site-header {
+  position: relative;
+}
+
+// fancy box-shadows
+.site-header .nav-links a {
+  position: relative;
+  z-index: 1;
+  transition: all 200ms ease-in-out;
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: $brand-two;
+    transform: translateX(calc(-100% - 1rem));
+    transition: all 200ms ease-in-out;
+  }
+  &:hover:after,
+  &:focus:after {
+    transform: translateX(0);
+  }
+}
+
+.nav-links li:nth-child(2n) {
+  a:after {
+    background-color: $brand-three;
+  }
+}
+
+.nav-links li:nth-child(3n) {
+  a:after {
+    background-color: $brand-four;
+  }
+}
+
+.nav-links li:nth-child(4n) {
+  a:after {
+    background-color: $brand;
+  }
+}
+
+.site-header nav {
+  display: flex;
+  align-items: center;
+  > * {
+    flex: 1;
+  }
+  .nav-links {
+    flex-direction: column;
+    @include bp(sm) {
+      flex-direction: row;
+    }
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    background-color: $white;
+    box-shadow: 0 7px 15px rgba(0,0,0,0.1);
+    .menu-open & {
+      border-top: 1px solid $light-gray;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    @include bp(md) {
+      &, 
+      .menu-open & {
+        position: relative;
+        top: initial;
+        box-shadow: none;
+        border-top: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.nav-links > li {
+  overflow: hidden;
+  @include bp(sm) {
+    flex: 1;
+    min-width: 50%;
+  }
+  @include bp(md) {
+    min-width: initial;
+  }
+}
+
+.nav-links a {
+  display: block;
+  width: 100%;
+}
+
+.site-header ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.site-header .sub-menu {
+  display: block;
+  margin-left: 1rem;
+}
+
+.site-header li {
+  display: none;
+  margin-bottom: 0.5rem;
+  .menu-open & {
+    display: block;
+  }
+  @include bp(md) {
+    display: initial;
+  }
+}
+
+.site-logo {
+  background-image: url(/img/logo.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: calc(100% - 1rem);
+  position: relative;
+  padding: 3rem 0;
+  max-width: 200px;
+  @include bp(sm) {
+    background-size: 200px;
+  }
+}
+
+.site-logo a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.site-logo a span {
+  display: inline-block;
+  text-indent: -100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#header-more-button {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  @include bp(md) {
+    display: none;
+  }
+}

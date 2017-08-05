@@ -25,13 +25,22 @@
 
 {% include body-class.html %}
 
-  <header>
-    <nav>
-      {% include header-navigation.html %}
-    </nav>
+  <header class="site-header">
+    <div class="site-width">
+      <nav>
+        <div class="site-logo">
+          <a href="/" title="Home"><span>Costello</span></a>
+        </div>
+        <ul class="nav-links">
+          {% include header-navigation.html %}
+        </ul>
+      </nav>
+      <button id="header-more-button" class="btn-primary">More</button>
+    </div>
   </header>
   <main>
       {{content}}
   </main>
+  <script type='text/javascript' src='/js/app.js'></script>
 </body>
 </html>

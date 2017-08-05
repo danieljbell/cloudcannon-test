@@ -30,6 +30,15 @@
   }
 }
 
+.site-header .nav-links a.active {
+  font-weight: bold;
+  &:before {
+    content: '\2014';
+    color: $brand;
+    margin-right: 0.5em;
+  } 
+}
+
 .nav-links li:nth-child(2n) {
   a:after {
     background-color: $brand-three;

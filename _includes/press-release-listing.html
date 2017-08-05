@@ -7,7 +7,7 @@
         </div>
         <div class="press-release-info-container">
           {% if release.internal != true %}
-            <span>EXTERNAL &nbsp;|&nbsp; {{release.external_name | upcase}}</span>
+            <span>EXTERNAL RELEASE &nbsp;|&nbsp; {{release.external_name | upcase}}</span>
           {% endif %}
           <h3 class="press-release-title">
             {% if release.internal != true %}

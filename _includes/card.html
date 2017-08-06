@@ -2,12 +2,7 @@
   <a href="{{item.url}}" title="{{item.name}}" class="card-link">
     <div class="card-content">
       {% assign my_cat = item.category[0] | downcase %}
-      <p class="card-tag 
-      {% if my_cat == 'marketing' %}
-        card-tag-brand-three
-      {% endif %}
-      ">{{my_cat}}</p>
-      <h4 class="card-title">{{item.title}}</h4>
+      <h4 class="card-title"><span class="card-tag">{{my_cat}}</span>{{item.title}}</h4>
       <p class="card-description">{{item.description}}</p>
     </div>
   </a>

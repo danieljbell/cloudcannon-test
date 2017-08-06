@@ -20,10 +20,10 @@
                   {% if author.twitter or author.linkedin %}
                     <ul class="author-social">
                       {% if author.twitter %}
-                        <li><a href="{{author.twitter}}">TW</a></li>
+                        <li><a href="{{author.twitter}}">{% include icons/twitter-icon.html %}</a></li>
                       {% endif %}
                       {% if author.linkedin %}
-                        <li><a href="{{author.linkedin}}">LI</a></li>
+                        <li><a href="{{author.linkedin}}">{% include icons/linkedin-icon.html %}</a></li>
                       {% endif %}
                     </ul>
                   {% endif %}

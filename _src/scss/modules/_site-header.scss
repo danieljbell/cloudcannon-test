@@ -36,22 +36,32 @@
     content: '\2014';
     color: $brand;
     margin-right: 0.5em;
-  } 
+  }
+  &:hover:before {
+    color: $white;
+  }
 }
 
-.nav-links li:nth-child(2n) {
+.has-sub-menu .sub-menu li:first-child a:after {
+  background-color: $brand-four;
+}
+
+.nav-links li:nth-child(2n),
+.has-sub-menu .sub-menu li:nth-child(2n) {
   a:after {
     background-color: $brand-three;
   }
 }
 
-.nav-links li:nth-child(3n) {
+.nav-links li:nth-child(3n),
+.has-sub-menu .sub-menu li:nth-child(3n) {
   a:after {
     background-color: $brand-four;
   }
 }
 
-.nav-links li:nth-child(4n) {
+.nav-links li:nth-child(4n),
+.has-sub-menu .sub-menu li:nth-child(4n) {
   a:after {
     background-color: $brand;
   }

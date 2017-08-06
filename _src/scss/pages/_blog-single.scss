@@ -54,12 +54,42 @@ SINGLE POST STYLES
   display: flex;
 }
 
-.blog-author .author-social li a {
+.author-social a {
   margin-right: 0.5rem;
+  display: inline-block;
+}
+
+.author-social svg {
+  min-width: 15px;
+  min-height: 15px;
+  max-width: 15px;
+  max-height: 15px;
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.65));
+}
+
+.author-social path {
+  fill: $white;
 }
 
 .blog-meta-container {
   margin-top: 1rem;
+}
+
+.social-sharing {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  @include bp(md) {
+    position: initial;
+  }
+}
+
+.social-sharing h4 {
+  display: none;
+  @include bp(md) {
+    display: block;
+  }
 }
 
 .social-sharing-links {
@@ -67,11 +97,73 @@ SINGLE POST STYLES
   align-items: center;
   list-style-type: none;
   padding-left: 0;
+  margin-bottom: 0;
+  @include bp(md) {
+    margin-bottom: 2rem;
+  }
 }
 
 .social-sharing-links li {
-  margin-right: 0.5rem;
-  &:last-child {
-    margin-right: 0;
+  flex: 1;
+  text-align: center;
+  line-height: 1;
+  @include bp(md) {
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    &:last-child {
+      margin-right: 0;
+    }
   }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    line-height: 1;
+    min-height: 3rem;
+  }
+  svg {
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+  }
+  path {
+    fill: $white;
+  }
+}
+
+.facebook-share {
+  background-color: #3b5998;
+  transition: all 200ms ease-in-out;
+  &:hover,
+  &:focus  {
+    background-color: darken(#3b5998, 15%);
+  }
+}
+
+.twitter-share {
+  background-color: #00aced;
+  transition: all 200ms ease-in-out;
+  &:hover,
+  &:focus  {
+    background-color: darken(#00aced, 15%);
+  }
+}
+
+.linkedin-share {
+  background-color: #007bb6;
+  transition: all 200ms ease-in-out;
+  &:hover,
+  &:focus  {
+    background-color: darken(#007bb6, 15%);
+  }
+}
+
+.call-to-action img {
+  width: 100%;
+}
+
+.single-blog .related-links {
+  padding-left: 0;
 }

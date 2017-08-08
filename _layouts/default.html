@@ -12,7 +12,7 @@
       {% if page.name == 'index.html' %}
         <title>Costello | {{page.title}}</title>
       {% else %}
-        <title>Costello | {{page.name | remove: '.html' | capitalize }}</title>
+        <title>Costello | {{page.name | remove: '.html' | remove: '.md' | capitalize }}</title>
       {% endif %}
     {% else %}
       <title>Costello | {{page.title}}</title>

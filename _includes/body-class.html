@@ -22,6 +22,8 @@
   {% else %}
     <body class="single-team">
   {% endif %}
+{% elsif page.path contains 'pages' %}
+  <body class="single-page">
 {% else %}
   <body>
 {% endif %}

@@ -89,7 +89,7 @@ Certain web browsers and other devices you may use to access the Site or App may
 
 ##### Updates to the Privacy Policy
 
-We may periodically revise the Privacy Policy in our sole and absolute discretion to reflect changes in the law or our business practices. If we revise the Privacy Policy, we will notify you by posting the updated Privacy Policy on our Site. Changes to the [Privacy Policy](/blog/) will become effective and will apply to the information collected starting on the date we post the revised Privacy Policy on our Site. Your continued use of the Services after any change to our Privacy Policy has become effective will constitute your acceptance of the change.
+We may periodically revise the Privacy Policy in our sole and absolute discretion to reflect changes in the law or our business practices. If we revise the Privacy Policy, we will notify you by posting the updated Privacy Policy on our Site. Changes to the Privacy Policy will become effective and will apply to the information collected starting on the date we post the revised Privacy Policy on our Site. Your continued use of the Services after any change to our Privacy Policy has become effective will constitute your acceptance of the change.
 
 ### Comments and Questions
 

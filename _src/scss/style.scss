@@ -1,10 +1,24 @@
+/*
+==============================
+COLORS
+==============================
+*/
 $white: #fff;
 $light-gray: #D0D2D3;
-$black: #363636;
+$black: #4a4a4a;
 $brand: #66AF68;
 $brand-two: #f7da68;
 $brand-three: #a16479;
 $brand-four: #6686c3;
+
+
+/*
+==============================
+FONTS
+==============================
+*/
+$brand-font-stack: 'Roboto', Helvetica, Arial, sans-serif;
+
 
 /*
 ========================
@@ -47,6 +61,7 @@ CREATE MEDIA QUERY
         'modules/_card',
         'modules/_category-listing',
         'modules/_footer',
+        'modules/_form',
         'modules/_hero',
         'modules/_site-header',
         'pages/_blog-single',

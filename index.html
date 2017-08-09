@@ -8,7 +8,7 @@ image: //fillmurray.com/1440/500
       <div class="green-blob">
         <h1 class="editable">The best sales reps are <span class="brand-highlight">consistent</span> but consistency in sales is hard.</h1>
         <p class="editable">What if every sales rep inherited the good habits of your best rep? With Costello, they do.</p>
-        <a href="{{page.url}}/#contact" class="btn-primary">Learn More</a>
+        <a href="#contact" class="btn-primary">Learn More</a>
       </div>
     </div>
   </div>
@@ -121,8 +121,13 @@ image: //fillmurray.com/1440/500
     </div>
   </div>
 </section>
-<section class="pad-y">
+<section class="pad-y" id="contact">
   <div class="site-width">
-    <h2><span class="brand-highlight">Co-pilot</span>. Assistant. Hype-man. Check. Check. Check.</h2>
+    <div class="half-only-md-up">
+      <h2 class="has-text-center"><span class="brand-highlight">Co-pilot</span>. Assistant. Hype-man. Check. Check. Check.</h2>
+      <div class="half-only-md-up mar-t">
+        {% include lead-form.html %}
+      </div>
+    </div>
   </div>
 </section>

@@ -11,10 +11,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.2;
-  @include bp(sm) {
+  @include bp(md) {
+    font-size: 2rem;
+  }
+  @include bp(lg) {
     font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  @include bp(md) {
+    font-size: 1.6rem;
+  }
+  @include bp(lg) {
+    font-size: 2rem;
   }
 }
 
@@ -42,6 +57,10 @@ a {
 
 strong {
   font-weight: bold;
+}
+
+em {
+  font-style: italic;
 }
 
 button {

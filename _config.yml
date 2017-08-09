@@ -7,6 +7,14 @@ linkedin: https://www.linkedin.com/company-beta/16234555/
 
 default_image: https://unsplash.it/700/466
 
+address_street: 525 Union St.
+address_suite: Suite 1A2
+address_city: Indianapolis
+address_state: IN
+address_zip: 46225
+address_phone: 317.520.4325
+
+
 # incremental: true
 
 # permalink: pretty

@@ -48,6 +48,18 @@ table {
   box-sizing: border-box;
 }
 
+main {
+  overflow: hidden;
+}
+
 section {
   padding: 3rem 0;
+  &.pad-y {
+    @include bp(md) {
+      padding: 6rem 0;
+    }
+  }
+  &.slim-pad-y {
+    padding: 1rem 0;
+  }
 }

@@ -95,6 +95,25 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+h3 {
+  color: #66AF68;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
 .checkbox-list li {
   position: relative;
 }
@@ -233,6 +252,7 @@ blockquote .quote {
   padding-top: 2rem;
   font-size: 1.15em;
   font-style: italic;
+  margin-bottom: 0;
 }
 blockquote .quote:before {
   content: '\201C';

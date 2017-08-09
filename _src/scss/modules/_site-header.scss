@@ -110,7 +110,7 @@
 .nav-links > li {
   @include bp(sm) {
     flex: 1;
-    min-width: calc(50% - 2rem);
+    // min-width: calc(50% - 2rem);
   }
   @include bp(md) {
     min-width: initial;

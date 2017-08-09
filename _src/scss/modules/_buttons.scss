@@ -29,6 +29,7 @@
       bottom: 0;
       transform: translateX(-100%);
       transition: all 200ms ease-in-out;
+      opacity: 0;
     }
     &:hover,
     &:focus {
@@ -36,6 +37,7 @@
     }
     &:hover:after,
     &:focus:after {
+      opacity: 1;
       transform: translateX(0%);
     }
   }

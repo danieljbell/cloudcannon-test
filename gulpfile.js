@@ -35,7 +35,9 @@ gulp.task('watch', function() {
 
 gulp.task('js', function () {
   gulp.src([
-      '_src/js/site-header.js'
+        'node_modules/waypoints/lib/noframework.waypoints.min.js',
+        '_src/js/site-header.js',
+        '_src/js/home.js'
     ])
     .pipe(sourcemaps.init())
     .pipe(concat('app.js'))

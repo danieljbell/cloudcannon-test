@@ -1,0 +1,15 @@
+.checkbox-list {
+  padding-left: 1.5em;
+  list-style-type: none;
+  li {
+    position: relative;
+    &:before {
+      content: url(../img/checkbox.svg);
+      position: absolute;
+      top: 0;
+      left: -1.5em;
+      width: 100%;
+      max-width: 15px;
+    }
+  }
+}

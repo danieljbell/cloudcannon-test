@@ -1,0 +1,14 @@
+.airplane-container {
+  position: relative;
+}
+
+.airplane {
+  position: absolute;
+  max-width: 200px;
+  left: calc(100% - 2rem); 
+  transform: translate(-150%, 150%);
+  transition: all 500ms ease-in-out;
+  .airplane-in-view & {
+    transform: translate(0, 0);   
+  }
+}

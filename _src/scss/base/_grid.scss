@@ -11,6 +11,10 @@
   }
 }
 
+.vertical-center {
+  align-items: center;
+} 
+
 .half,
 .third,
 .fourth,
@@ -50,6 +54,14 @@
     }
   }
 } 
+
+.two-third-only {
+  > * {
+    max-width: calc((100% / 3) * 2);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 @supports (display: grid) {
   .half,

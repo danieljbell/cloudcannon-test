@@ -56,6 +56,7 @@ CREATE MEDIA QUERY
 @import 'base/_reset',
         'base/_typography',
         'base/_grid',
+        'base/_list',
         'modules/_blob',
         'modules/_buttons',
         'modules/_card',
@@ -65,8 +66,9 @@ CREATE MEDIA QUERY
         'modules/_hero',
         'modules/_site-header',
         'pages/_blog-single',
-        'pages/_resource-layout',
+        'pages/_home',
         'pages/_press-archive',
         'pages/_press-single',
+        'pages/_resource-layout',
         'pages/_single-page',
         'base/_utilities';

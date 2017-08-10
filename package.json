@@ -28,6 +28,7 @@
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^3.0.0",
     "postcss-import": "^10.0.0",
-    "pump": "^1.0.2"
+    "pump": "^1.0.2",
+    "waypoints": "^4.0.1"
   }
 }

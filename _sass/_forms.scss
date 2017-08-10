@@ -27,6 +27,14 @@ input:not(.phonepart) {
   width: 100%;
 }
 
+input[type="checkbox"] {
+  float: left;
+  width: initial;
+  margin-right: 0.5rem;
+  position: relative;
+  top: 4px;
+}
+
 .phonefield {
   display: flex;
 }

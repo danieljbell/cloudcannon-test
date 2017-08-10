@@ -114,6 +114,11 @@ p {
   margin-bottom: 2rem;
 }
 
+footer p {
+  margin-bottom: 0;
+}
+
+
 .checkbox-list li {
   position: relative;
 }

@@ -5,10 +5,13 @@
 .airplane {
   position: absolute;
   max-width: 200px;
-  left: calc(100% - 2rem); 
+  left: calc(100% + 1rem); 
   transform: translate(-150%, 150%);
   transition: all 500ms ease-in-out;
   .airplane-in-view & {
     transform: translate(0, 0);   
+  }
+  .airplane-out-view & {
+    transform: translate(150%, -150%);   
   }
 }

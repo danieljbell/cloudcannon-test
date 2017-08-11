@@ -36,6 +36,7 @@ gulp.task('watch', function() {
 gulp.task('js', function () {
   gulp.src([
         'node_modules/waypoints/lib/noframework.waypoints.min.js',
+        'node_modules/waypoints/lib/shortcuts/inview.js',
         '_src/js/site-header.js',
         '_src/js/home.js'
     ])

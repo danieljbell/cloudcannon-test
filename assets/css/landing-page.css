@@ -23,7 +23,6 @@
 }
 
 .hero {
-  background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), linear-gradient(to right, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.5)), url(//fillmurray.com/1920/450);
   background-size: cover;
   color: #fff;
   text-shadow: 2px 2px 1px rgba(0,0,0,0.65);

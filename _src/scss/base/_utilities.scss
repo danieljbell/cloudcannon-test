@@ -93,6 +93,10 @@
   padding-bottom: 3rem;
 }
 
+.light-callout {
+  background-color: lighten($light-gray, 12%);
+}
+
 .light-brand-callout {
   background-color: lighten($brand, 40%);
 }

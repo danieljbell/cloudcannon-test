@@ -1,6 +1,6 @@
 .integrations-container {
   position: relative;
-  > * {
+  .integrations-inner > * {
     position: absolute;
     top: 50%;
     left: 50%;

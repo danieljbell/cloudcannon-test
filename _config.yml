@@ -33,6 +33,9 @@ collections:
   press:
     output: true
     permalink: /:collection/:title
+  customer-success:
+    output: true
+    permalink: /:collection/:title
 
 defaults:
   -

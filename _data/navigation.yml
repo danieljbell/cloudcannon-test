@@ -4,6 +4,7 @@ header:
   - title: About Us
     url: /about/
   - title: Customer Success
+    url: /customer-success/
   - title: Resources
     url: /resources/
     subfolderitems:

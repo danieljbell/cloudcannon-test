@@ -1,0 +1,20 @@
+.customer-challenge,
+.customer-solution,
+.customer-results {
+  display: flex;
+}
+
+.customer-icon {
+  margin-right: 1rem;
+  width: 100%;
+  max-width: 75px;
+}
+
+.customer-about * {
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+
+.customer-about h4 {
+  font-size: 1.1em;
+}

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single-column
 title: How My Internship at a Tech Startup Impacted My Future - Nick Fordyce
 categories:
   - Company

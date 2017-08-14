@@ -61,3 +61,8 @@ exclude:
   - LICENSE
   - CNAME
   - Rakefile
+
+
+collections:
+  posts:
+    permalink: /blog/:categories/:title/

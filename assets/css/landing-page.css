@@ -293,3 +293,28 @@ form {
   margin-top: 3rem;
 }
 
+.lp-container .hero {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.lp-container .featured-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  opacity: 0.4;
+  transform: translate(-50%, -50%);
+  filter: blur(3px);
+}
+
+.lp-container h4 {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.lp-container a {
+  color: #007c04;
+  text-decoration: underline;
+}

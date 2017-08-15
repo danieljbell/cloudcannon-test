@@ -1,11 +1,9 @@
 source "https://rubygems.org"
 
-gem "rake"
+gem "jekyll", "3.5.0"
 
 group :jekyll_plugins do
-  gem "hawkins"
-  gem "jekyll-feed"
-  gem "jekyll-google-tag-manager"
-  gem "jekyll-paginate"
-  gem "jekyll-sitemap"
+  gem 'jekyll-sitemap'
+  gem 'jekyll-seo-tag'
+  # gem 'jekyll-minifier', '~> 0.1.3'
 end

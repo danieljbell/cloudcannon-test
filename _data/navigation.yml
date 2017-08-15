@@ -1,0 +1,24 @@
+header:
+  - title: Why Costello
+    url: /why/
+  - title: About Us
+    url: /about/
+  - title: Customer Success
+    url: /customer-success/
+  - title: Resources
+    url: /resources/
+    subfolderitems:
+      - page: Blog
+        url: /blog/
+      - page: Press
+        url: /press/
+      - page: Videos
+        url: /videos/
+
+resources:
+  - title: Blog
+    url: /blog/
+  - title: Press
+    url: /press/
+  - title: Videos
+    url: /videos/        

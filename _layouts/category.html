@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{% include hero.html %}
+{% include resource-navigation.html %}
+
+<section class="resource-grid">
+  <div class="site-width">
+    <div class="one-fourth">
+      <ul class="half">
+        {% if page.url contains 'blog' %}
+          {% for item in site.categories.[page.category] %}
+            {% include card.html %}
+          {% endfor %}
+        {% endif %}
+        {% if page.url contains 'videos' %}
+          {% for item in site.videos %}
+          
+          {% endfor %}
+        {% endif %}
+      </ul>
+      <div>
+        {% include category-listing.html %}
+      </div>
+    </div>
+  </div>
+</section>

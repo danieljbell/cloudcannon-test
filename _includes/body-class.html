@@ -1,0 +1,35 @@
+{% if page.url == '/' %}
+  <body class="home">
+{% elsif page.url contains 'blog' %}
+  {% if page.url == '/resources/blog/' %}
+    <body class="archive-blog">
+  {% else %}
+    <body class="single-blog">
+  {% endif %}
+{% elsif page.url contains 'videos' %}
+  {% if page.url == '/resources/videos/' %}
+    <body class="archive-videos">
+  {% else %}
+    <body class="single-videos">
+  {% endif %}
+{% elsif page.url contains 'press' and page.url == '/press/' %}
+    <body class="archive-press">
+{% elsif page.url contains 'press' and page.url != '/press/' %}
+    <body class="single-press">
+{% elsif page.url contains 'team' %}
+  {% if page.url == '/team/' %}
+    <body class="archive-team">
+  {% else %}
+    <body class="single-team">
+  {% endif %}
+{% elsif page.path contains 'pages' %}
+  <body class="single-page">
+{% elsif page.path contains 'customer-success' %}
+  {% if page.path == '_customer-success/index.html' %}
+    <body class="archive-customer-success">
+  {% else %}
+    <body class="single-customer-success">
+  {% endif %}
+{% else %}
+  <body>
+{% endif %}

@@ -4,6 +4,7 @@ title: Costello Privacy Policy
 permalink: /privacy/
 ---
 
+
 Costello, Inc. (“Costello,” “we,” “us,” “our”) is committed to protecting the privacy of our customers’ information. The following Privacy Policy sets forth our policies and practices regarding the collection, use, and disclosure of the information we receive through your use of our website at [https://andcostello.com](https://andcostello.com) (the “Site”) and our on-demand sales process effectiveness platform (the “Platform”). We refer to the Site, the Platform, and related services collectively throughout this policy as the “Services.”
 
 ### Effective Date

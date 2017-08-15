@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{% include hero.html %}
+
+{% include resource-navigation.html %}
+
+<section class="resource-grid">
+  <div class="site-width">
+    
+    {% if page.path contains 'blog' %}
+      <div class="one-fourth">
+        <ul class="half">
+          {% for item in site.posts %}
+            {% include card.html %}
+          {% endfor %}
+        </ul>
+        <div>
+          {% include category-listing.html %}
+        </div>
+      </div>
+    {% elsif page.url == '/resources/' %}
+      {% for thing in site.pages %}
+        {{thing.name}}
+      {% endfor %}
+    {% elsif page.url == '/press/' %}
+      
+      {% include press-release-listing.html %}
+      
+    {% else %}
+    <div class="one-fourth">
+      <ul class="half">
+        {% assign my_page = page.title | downcase %}
+        {% for item in site.[my_page] %}
+          {% unless item.url == page.url %}
+              {% include card.html %}
+          {% endunless %}
+        {% endfor %}
+      </ul>
+      <div>
+        {% include category-listing.html %}
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+</section>

@@ -1,0 +1,33 @@
+{% if page.url contains '/videos/' %}
+  <h4 class="category-listing-heading">Video Categories</h4>
+{% else %}
+  <h4 class="category-listing-heading">{{page.title}} Categories</h4>
+{% endif %}
+<ul class="category-listing">
+  {% if page.url contains '/blog/' %}
+    {% for category in site.categories %}
+      {% assign my_cat = category[0] | downcase %}
+      {% if page.url contains my_cat %}
+        <li class="active">
+      {% else %}
+        <li>
+      {% endif %}
+      <a href="/blog/{{ my_cat }}">{{ category[0] }} <span>({{ category[1].size }})</span></a></li>
+    {% endfor %}
+  {% else %}
+    {% assign video_categories = site.videos | group_by: "category" | sort: "name" %}
+    {% for category in video_categories %}
+      {% if category.name != "" %}
+        {% assign my_cat = category.name | remove: '["' | remove: '"]'  %}
+        {% assign lower_my_cat = my_cat | downcase %}
+        {% if page.url contains lower_my_cat %}
+          <li class="active">
+        {% else %}
+          <li>
+        {% endif %}
+        <a href="/videos/{{ my_cat | downcase }}">{{my_cat}} <span>({{category.size}})</span></a></li>
+      {% endif %}
+    {%endfor%}
+  {% endif %}
+</ul>
+

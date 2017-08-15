@@ -1,0 +1,53 @@
+<footer class="site-footer">
+  <section class="footer-links-container">
+    <div class="site-width">
+      <div class="one-fourth reverse">
+        <div class="footer-meta">
+          <a href="/" title="Home">{% include icons/logo.html %}</a>
+          <address>
+            <p>{{site.address_street}}</p>
+            <p>{{site.address_suite}}</p>
+            <p>{{site.address_city}}, {{site.address_state}} {{site.address_zip}}</p>
+            <a href="tel:{{site.address_phone}}">{{site.address_phone}}</a>
+          </address>
+        </div>
+        <div class="footer-links">
+          {% for item in site.data.navigation.header %}
+            <li {% if item.subfolderitems %}class="has-sub-menu"{% endif %}>
+              <a href="{{item.url}}" {% if page.url contains item.url  %}class="active"{% endif %} title="{{item.title}}">{{item.title}}</a>
+              {% if item.subfolderitems %}
+                <ul class="sub-menu">
+                  {% for entry in item.subfolderitems %}
+                    <li><a href="{{ entry.url }}" {% if entry.url == page.url %}class="active"{% endif %} title="{{entry.page}}">{{ entry.page }}</a></li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slim-pad-y sub-footer">
+    <div class="site-width">
+      <div class="half">
+        <div>
+          <ul class="social-sharing-links">
+            <li class="facebook-share">
+              <a href="{{site.facebook}}" target="_blank" rel="noopener noreferrer">{% include icons/facebook-icon.html %}</a>
+            </li>
+            <li class="twitter-share">
+              <a href="{{site.twitter}}" target="_blank" rel="noopener noreferrer">{% include icons/twitter-icon.html %}</a>
+            </li>
+            <li class="linkedin-share">
+              <a href="{{site.linkedin}}" target="_blank" rel="noopener noreferrer">{% include icons/linkedin-icon.html %}</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          &copy; {{ site.time | date: '%Y' }} Costello. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>

@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<article>
+  {% include hero.html %}
+  
+  <div class="site-width">
+    <section class="post-content">
+      <div class="two-third">
+        <article>
+          {{content}}
+        </article>
+        <aside>
+          <div class="social-sharing">
+            <h4>Share this Article:</h4>
+            <ul class="social-sharing-links">
+              <li class="facebook-share">
+                <a href="#0">{% include icons/facebook-icon.html %}</a>
+              </li>
+              <li class="twitter-share">
+                <a href="https://twitter.com/intent/tweet?text={{page.title}}%20|%20{{page.description}}&url={{site.url}}{{page.url}}" target="_blank" rel="noopener noreferrer">{% include icons/twitter-icon.html %}</a>
+              </li>
+              <li class="linkedin-share">
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{page.title}}&summary={{page.description}}&source={{site.url}}" target="_blank" rel="noopener noreferrer">{% include icons/linkedin-icon.html %}</a>
+              </li>
+            </ul>
+          </div>
+          <h4>Related Blog Posts</h4>
+          <ul class="related-links">
+            {% assign my_cat = page.categories[0] %}
+            {% for item in site.categories.[my_cat] limit: 3 %}
+              {% unless item.url == page.url %}
+                {% include card.html %}
+              {% endunless %}
+            {% endfor %}
+          </ul>
+        </aside>
+      </div>
+    </section>
+    <section class="call-to-action">
+      <div class="two-third">
+        <a href="{{page.advertisment_link}}"><img src="{{page.advertisment_image}}" alt="Advertisement"></a>
+      </div>
+    </section>
+  </div>
+</article>

@@ -1,0 +1,12 @@
+---
+layout: resources
+title: Videos
+permalink: /videos/
+---
+<ul>
+  {% for video in site.videos %}
+    {% unless video.url == page.url %}
+      <li><a href="{{video.url}}">{{video.title}}</a></li>
+    {% endunless %}
+  {% endfor %}
+</ul>

@@ -47,6 +47,13 @@
   }
 }
 
+.customer-about {
+  margin-bottom: 2rem;
+  @include bp(md) {
+    margin-bottom: 0;
+  }
+}
+
 .customer-about * {
   font-size: 0.85em;
   line-height: 1.4;

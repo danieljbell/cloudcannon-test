@@ -24,6 +24,12 @@
   {% endif %}
 {% elsif page.path contains 'pages' %}
   <body class="single-page">
+{% elsif page.path contains 'customer-success' %}
+  {% if page.path == '_customer-success/index.html' %}
+    <body class="archive-customer-success">
+  {% else %}
+    <body class="single-customer-success">
+  {% endif %}
 {% else %}
   <body>
 {% endif %}

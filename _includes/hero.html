@@ -3,8 +3,17 @@
     <img src="{{page.image}}" alt="{{page.title}}" class="hero-image">
   {% endif %}
   <div class="site-width">
+    {% if page.path contains '_customer-success' %}
+      <div class="green-blob">
+    {% endif %}
+    {% if page.customer_logo %}
+      <img src="{{page.customer_logo}}" alt="{{page.title}} Logo" class="customer-logo">
+    {% endif %}
     <h1 class="hero-title">{{page.title}}</h1>
     <p class="hero-subtitle">{{page.description}}</p>
+    {% if page.path contains '_customer-success' %}
+      </div>
+    {% endif %}
     {% if page.path contains '_posts' %}
       <div class="blog-meta-container">
         <ul class="blog-meta-list">

@@ -1,12 +1,16 @@
 ---
 layout: customer-success
+image: //fillmurray.com/1920/600
+title: Sales enablement tool increases deals closed per month by 30%
+customer_logo: /uploads/Bloomerang-Logo.png
+description: We created Costello directly from feedback of from our customers.
 ---
 <div class="site-width">
   <div class="two-third">
     <section>
       <div class="customer-challenge">
         <div class="customer-icon">
-          <img src="//fillmurray.com/75/75" alt="">
+          {% include icons/question-mark-icon.html %}
         </div>
         <div class="customer-content">
           <h3>The Challenge</h3>
@@ -17,7 +21,7 @@ layout: customer-success
       </div>
       <div class="customer-solution">
         <div class="customer-icon">
-          <img src="//fillmurray.com/75/75" alt="">
+          {% include icons/lightbulb.html %}
         </div>
         <div class="customer-content">
           <h3>The Solution</h3>
@@ -31,7 +35,7 @@ layout: customer-success
       </div>
       <div class="customer-results">
         <div class="customer-icon">
-          <img src="//fillmurray.com/75/75" alt="">
+          {% include icons/airplane-icon.html %}
         </div>
         <div class="customer-content">
           <h3>The Results</h3>
@@ -43,9 +47,24 @@ layout: customer-success
     </section>
     <aside class="pad-y">
       <div class="customer-about box--light">
-        <h4>About {{page.title}}</h4>
+        <h4>About {{page.path | remove: '_customer-success/' | remove: '.html' | capitalize}}</h4>
         <p class="editable">Bloomberg helps nonprofit organizations reach, engage and retain the advocates they depend on to achieve their vision for a better world. Their cloud-based donor management application empowers teams to achieve remarkable results through enhanced donor loyalty.</p>
       </div>
+      <blockquote>
+        <div class="blue-blob">
+          <p class="quote editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae inventore, et assumenda illum nam? Est!</p>
+          <div class="person">
+            <div class="person-headshot-container">
+              <img src="//fillmurray.com/120/120" alt="" class="editable person-headshot" />
+            </div>
+            <div class="person-info">
+              <p class="editable person-name">Bill Murray</p>
+              <p class="editable person-title">CEO</p>
+              <img src="{{page.customer_logo}}" alt="{{page.title}} Logo" class="editable person-company-logo" />
+            </div>
+          </div>
+        </div>
+      </blockquote>
     </aside>
   </div>
 </div>

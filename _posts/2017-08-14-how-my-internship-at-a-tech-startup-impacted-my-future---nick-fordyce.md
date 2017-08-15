@@ -25,7 +25,7 @@ I walked into Suite 1A2 on my first day to my desk right inside the door. Right 
 
 ### **My Role as an Integral Part of the Team**
 
-It’s was a small team. When the team is small, everyone’s presence matters. Even as an intern, I played a major role. We started every day with a stand up meeting mid-morning to share tasks completed the previous day and projects we would be working on throughout the current day. Each team member set goals and worked tirelessly to reach them. Before long, I realized the projects I worked on were contributing to the speed of developing the product. I built something. And then built something better. The software features I built are used by companies daily. My work mattered and that’s really cool.
+It was a small team. When the team is small, everyone’s presence matters. Even as an intern, I played a major role. We started every day with a stand up meeting mid-morning to share tasks completed the previous day and projects we would be working on throughout the current day. Each team member set goals and worked tirelessly to reach them. Before long, I realized the projects I worked on were contributing to the speed of developing the product. I built something. And then built something better. The software features I built are used by companies daily. My work mattered and that’s really cool.
 
 ![](/uploads/versions/nick-fordyce-interns---x0-0-334-223-360-240x---.jpg)
 

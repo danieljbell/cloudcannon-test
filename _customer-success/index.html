@@ -1,0 +1,19 @@
+---
+layout: default
+title: Customer Success
+---
+
+{% include hero.html %}
+
+<section>
+  <div class="site-width">
+    <h3>Customer Success Stories</h3>
+    <ul class="third">
+      {% for story in site.customer-success %}
+        {% unless story.url == page.url %}
+          <li class="blue-blob"><a href="{{story.url}}" title="{{story.title}}"><img src="{{story.customer_logo}}" alt="{{story.title}} Logo"></a></li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>

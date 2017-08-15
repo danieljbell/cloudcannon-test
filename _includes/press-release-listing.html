@@ -1,0 +1,24 @@
+<ul class="press-release-listing">
+  {% for release in site.press %}
+    {% unless release.url == '/press/' %}
+      <li>
+        <div class="press-release-date">
+          {{ release.date | date: "%b %d," }}<span class="press-release-year">{{ release.date | date:  "%Y" }}</span>
+        </div>
+        <div class="press-release-info-container">
+          {% if release.internal != true %}
+            <span>EXTERNAL RELEASE &nbsp;|&nbsp; {{release.external_name | upcase}}</span>
+          {% endif %}
+          <h3 class="press-release-title">
+            {% if release.internal != true %}
+              <a href="{{release.external_link}}" title="{{release.name}}" target="_blank" rel="noopener noreferrer">{{release.title}}</a>
+            {% else %}
+              <a href="{{release.url}}" title="{{release.name}}">{{release.title}}</a>
+            {% endif %}
+          </h3>
+          <p class="press-release-description">{{release.description}}</p>
+        </div>
+      </li>
+    {% endunless %}
+  {% endfor %}
+</ul>

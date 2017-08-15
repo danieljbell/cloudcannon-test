@@ -1,0 +1,123 @@
+.single-customer-success .green-blob:after,
+.archive-customer-success .green-blob:after {
+  width: 90vw;
+  @include bp(lg) {
+    width: 50vw;
+  }
+  top: 50%;
+  left: 50%;
+  bottom: initial;
+  transform: translate(-50%, -50%);
+}
+
+.single-customer-success .hero .site-width {
+  @include bp(md) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  @include bp(lg) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+.single-customer-success .hero .customer-logo {
+  filter: drop-shadow(3px 3px 2px rgba(black, 0.65));
+}
+
+.customer-challenge,
+.customer-solution,
+.customer-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include bp(sm) {
+    flex-direction: row;
+    align-items: initial;
+  }
+}
+
+.customer-icon {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+  svg {
+    width: 100%;
+    max-width: 75px;
+  }
+}
+
+.customer-about {
+  margin-bottom: 2rem;
+  @include bp(md) {
+    margin-bottom: 0;
+  }
+}
+
+.customer-about * {
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+
+.customer-about h4 {
+  font-size: 1.1em;
+}
+
+.single-customer-success aside {
+  position: relative;
+  blockquote {
+    background-color: #fff;
+    position: relative;
+    @include bp(md) {
+      position: absolute;
+      bottom: 0;
+      transform: translateY(-200%);
+    }
+    .blue-blob {
+      width: 100%;
+      @include bp(md) {
+        max-width: 300px;
+      }
+      z-index: 0;
+      &:after {
+        top: 75%;
+        display: none;
+        @include bp(md) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.single-customer-success blockquote:after {
+  top: 100%;
+  left: 50%;
+  transform: rotate(-90deg) translateX(13px) translateY(-215%);
+  @include bp(lg) {
+    transform: rotate(-90deg) translateX(13px) translateY(-280%);
+  }
+}
+
+.single-customer-success blockquote > * {
+  background-color: transparent;
+}
+
+.single-customer-success blockquote .quote {
+  padding-bottom: 2rem;
+}
+
+.single-customer-success blockquote .person {
+  @include bp(md) {
+    position: absolute;
+    top: calc(100% + 2rem);
+  }
+}
+
+.single-customer-success blockquote .person-headshot {
+  position: relative;
+  left: initial;
+  top: initial;
+  max-width: 85px;
+  transform: translateX(-15px);
+}

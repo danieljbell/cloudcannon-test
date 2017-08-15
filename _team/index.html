@@ -1,0 +1,23 @@
+---
+layout: default
+title: Team
+permalink: /team/
+---
+<ul>
+  {% for person in site.team %}
+    {% unless person.url == page.url %}
+      {% assign words = person.title | split: ' ' %}
+
+      {% capture titlecase %}
+        {% for word in words %}
+          {{ word | capitalize }}
+        {% endfor %}
+      {% endcapture %}
+
+      <li><a href="{{person.url}}">{{titlecase}}</a></li>
+
+    {% endunless %}
+  {% endfor %}
+</ul>
+
+

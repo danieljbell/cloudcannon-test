@@ -1,0 +1,59 @@
+.resource-navigation ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 0;
+  @include bp(sm) {
+    flex-direction: row;
+  }
+}
+
+.resource-navigation li {
+  margin: 0 1rem 1rem;
+  @include bp(sm) {
+    margin-bottom: 0;
+  }
+}
+
+.resource-navigation {
+  path {
+    fill: $brand;
+    transition: all 200ms ease-out;
+  }
+  .active path {
+    fill: $white;
+  }
+}
+
+.resource-navigation a {
+  display: flex;
+  padding: 0.75rem 3rem;
+  justify-content: center;
+  &:hover path,
+  &:focus path {
+    fill: $white;
+  }
+}
+
+.resource-navigation .active a {
+  padding: 0.75rem 3rem;
+  font-weight: bold;
+}
+
+.resource-icon-container {
+  width: 20px;
+  margin-right: 0.5rem;
+  position: relative;
+  top: 2px;
+}
+
+.resource-grid {
+  padding-top: 0;
+}
+
+.resource-grid ul {
+  margin-bottom: 0;
+}

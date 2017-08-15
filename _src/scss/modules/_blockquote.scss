@@ -1,0 +1,88 @@
+blockquote {
+  border: 1px solid #D0D2D3;
+  border-radius: 5px;
+  box-shadow: 0 1px 15px rgba(0,0,0,0.07);
+  position: relative;
+}
+blockquote:after {
+  display: none;
+  content: url(/img/blockquote-triangle.svg);
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  width: 19px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  blockquote:after {
+    display: block;
+  }
+}
+
+blockquote .person-headshot {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(-8rem - 20px);
+  max-width: 100px;
+}
+
+blockquote .quote {
+  position: relative;
+  padding-top: 2rem;
+  font-size: 1.15em;
+  font-style: italic;
+  margin-bottom: 0;
+  border-radius: 5px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #fff;
+}
+blockquote .quote:before {
+  content: '\201C';
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  font-style: normal;
+  font-size: 4em;
+  line-height: 1;
+  font-weight: bold;
+  opacity: 0.25;
+}
+
+blockquote .person {
+  display: flex;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  @include bp(lg) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+blockquote .person-name,
+blockquote .person-title {
+  margin-bottom: 0;
+}
+
+blockquote .person-title {
+  font-style: italic;
+  font-weight: normal;
+}
+
+blockquote .person-company-logo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  @include bp(md) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  width: 100%;
+  max-width: 165px;
+  display: block;
+  margin: 0 auto;
+}

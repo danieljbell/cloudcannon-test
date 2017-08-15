@@ -1,0 +1,102 @@
+.has-text-center {
+  text-align: center;
+}
+
+.has-text-left {
+  text-align: left;
+}
+
+.has-text-right {
+  text-align: right;
+  &-sm-up {
+    @include bp(sm) {
+      text-align: right;
+    }
+  }
+}
+
+%text-highlight {
+  text-shadow: none;
+  color: $black;
+  display: inline-block;
+  padding: 0.25rem;
+}
+
+.brand-highlight {
+  @extend %text-highlight;
+  background-color: $brand;
+}
+
+.brand-two-highlight {
+  @extend %text-highlight;
+  background-color: $brand-two;
+}
+
+.brand-three-highlight {
+  @extend %text-highlight;
+  background-color: $brand-three;
+}
+
+.brand-four-highlight {
+  @extend %text-highlight;
+  background-color: $brand-four;
+}
+
+.browser-window {
+  border: 1px solid $light-gray;
+  position: relative;
+  box-shadow: 0 0 25px rgba(0,0,0,.1);
+  border-radius: 5px;
+  &:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    top: -30px;
+    left: -1px;
+    right: -1px;
+    border: 1px solid $light-gray;
+    background-image: linear-gradient(#fff,#f0f0f0);
+    border-radius: 5px 5px 0 0;
+  }
+  > div:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    top: -30px;
+    left: -1px;
+    right: -1px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 0 #ff564f, 30px 10px #ffb429, 50px 10px #24c238;
+  }
+  img {
+    width: 100%;
+    display: block;
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+.pull-top {
+  margin-top: -2rem;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.mar-t {
+  margin-top: 3rem;
+}
+
+.pad-y {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.light-callout {
+  background-color: lighten($light-gray, 12%);
+}
+
+.light-brand-callout {
+  background-color: lighten($brand, 40%);
+}

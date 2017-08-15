@@ -1,0 +1,44 @@
+.integrations-container {
+  position: relative;
+  .integrations-inner > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 85px;
+    height: 85px;
+    padding: 1rem;
+    @include bp(md) {
+      width: 145px;
+      height: 145px;
+      padding: 2rem;
+    }
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 4px 4px 50px rgba(black, 0.1);
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 85%;
+      @include bp(md) {
+        width: 100%;
+      }
+    }
+    &.salesforce {
+      transform: translate(-125%, -125%);
+      img {
+        width: 125%;
+      }
+    }
+    &.gmail {
+      transform: translate(25%, -75%);
+    }
+    &.gcalender {
+      transform: translate(-100%, 25%);
+    }
+  } 
+  &.blue-blob:before {
+    width: 50vw;
+  }
+}

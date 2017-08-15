@@ -1,0 +1,10 @@
+---
+layout: resources
+title: Blog
+permalink: /blog/
+---
+<ul>
+  {% for blog in site.posts %}
+    <li><a href="{{blog.url}}">{{blog.title}}</a></li>
+  {% endfor %}
+</ul>

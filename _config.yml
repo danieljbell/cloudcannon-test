@@ -1,0 +1,65 @@
+title: Costello
+description: Setup every sales rep to perform like your best rep.
+
+facebook: https://www.facebook.com/You.andCostello/
+twitter: https://twitter.com/andCostello
+linkedin: https://www.linkedin.com/company-beta/16234555/
+
+default_image: https://unsplash.it/700/466
+
+address_street: 525 Union St.
+address_suite: Suite 1A2
+address_city: Indianapolis
+address_state: IN
+address_zip: 46225
+address_phone: 317.520.4325
+
+
+# incremental: true
+
+# permalink: pretty
+
+port: 8080
+
+collections:
+  posts:
+    permalink: /blog/:categories/:title/
+  team:
+    output: true
+    permalink: /:collection/:name
+  videos:
+    output: true
+    permalink: /:collection/:categories/:title
+  press:
+    output: true
+    permalink: /:collection/:title
+  customer-success:
+    output: true
+    permalink: /:collection/:title
+
+defaults:
+  -
+    scope: 
+      path: "" 
+      type: "team"
+    values:
+      layout: "team-member"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "blog-post"
+  -
+    scope:
+      path: ""
+      type: "videos"
+    values:
+      layout: "videos"
+  -
+    scope:
+      path: ""
+      type: "press"
+    values:
+      layout: "press"
+      internal: true

@@ -1,0 +1,23 @@
+<section class="resource-navigation">
+  <nav>
+    <ul>
+      {% for item in site.data.navigation.resources %}
+        <li {% if page.url contains item.url %}class="active"{% endif %}>
+          <a href="{{item.url}}" class="{% if page.url contains item.url %}btn-primary{% else %}btn-primary-outline{% endif %}">
+            <span class="resource-icon-container">
+              {% case item.title %}
+                {% when 'Blog' %}
+                  {% include icons/blog-icon.html %}
+                {% when 'Press' %}
+                  {% include icons/press-icon.html %}
+                {% when 'Videos' %}
+                  {% include icons/video-icon.html %}
+              {% endcase %}
+            </span>
+            <span class="link-text">{{item.title}}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</section>

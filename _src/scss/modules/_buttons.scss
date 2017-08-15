@@ -1,0 +1,44 @@
+%btn {
+  padding: 0.5rem 0.85rem;
+  text-decoration: none;
+  border-radius: 3px;
+  text-align: center;  
+  transition: all 200ms ease-out;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: $brand;
+  color: $white;
+  border: 1px solid transparent;
+  &-outline {
+    @extend %btn;
+    border: 1px solid $brand;
+    color: $brand;
+    &:after {
+      content: '';
+      background-color: $brand;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: translateX(-100%);
+      transition: all 200ms ease-in-out;
+      opacity: 0;
+    }
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+    &:hover:after,
+    &:focus:after {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+}

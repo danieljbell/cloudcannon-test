@@ -1,0 +1,47 @@
+<header class="hero">
+  {% if page.image %}
+    <img src="{{page.image}}" alt="{{page.title}}" class="hero-image">
+  {% endif %}
+  <div class="site-width">
+    {% if page.path contains '_customer-success' %}
+      <div class="green-blob">
+    {% endif %}
+    {% if page.customer_logo %}
+      <img src="{{page.customer_logo}}" alt="{{page.title}} Logo" class="customer-logo">
+    {% endif %}
+    <h1 class="hero-title">{{page.title}}</h1>
+    <p class="hero-subtitle">{{page.description}}</p>
+    {% if page.path contains '_customer-success' %}
+      </div>
+    {% endif %}
+    {% if page.path contains '_posts' %}
+      <div class="blog-meta-container">
+        <ul class="blog-meta-list">
+          <li class="blog-date">{{page.date | date: "%B %d, %Y"}}</li>
+          {% for author in site.team %}
+            {% if author.name == page.author %}
+              <li class="blog-author">
+                <div class="author-image">
+                  <img src="{{author.headshot}}" alt="{{author.name}}'s Headshot">
+                </div>
+                <div class="author-details">
+                  <span class="author-name">{{author.name}}</span>
+                  {% if author.twitter or author.linkedin %}
+                    <ul class="author-social">
+                      {% if author.twitter %}
+                        <li><a href="{{author.twitter}}">{% include icons/twitter-icon.html %}</a></li>
+                      {% endif %}
+                      {% if author.linkedin %}
+                        <li><a href="{{author.linkedin}}">{% include icons/linkedin-icon.html %}</a></li>
+                      {% endif %}
+                    </ul>
+                  {% endif %}
+                </div>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </div>
+</header>

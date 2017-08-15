@@ -1,0 +1,12 @@
+---
+layout: resources
+title: Press
+permalink: /press/
+---
+<ul>
+  {% for release in site.press %}
+    {% unless release.url == page.url %}
+      <li><a href="{{release.url}}">{{release.title}}</a></li>
+    {% endunless %}
+  {% endfor %}
+</ul>

@@ -47,4 +47,4 @@ Practice active listening throughout the call to gather information you need to 
 
 Every call should end with a next steps conversation. Whether you have an immediate action item or not, you should reconnect with your prospect. 80 percent of sales require 5 follow-up calls after the meeting. Have a system in place to simplify follow up actions. Ensure your follow up is timely. Don’t wait days or even weeks to reach out to the prospect after the call. Even if it’s a short note, make sure to send an email, social media message or text to keep the conversation going.
 
-See how Costello can simplify your sales call process.
+[See how Costello can simplify your sales call process.](https://andcostello.com/#contact)

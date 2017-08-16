@@ -3,8 +3,11 @@ title: A New Post
 description: A short description
 author: First Last
 category:
-  - Sales
-  - Marketing
+  - Knowledge Transfer
+  - Pipeline Quality
+  - Training Adoption
+  - Daily Sales Manager Visibility
+  - Sales Intelligence
 image: https://unsplash.it/700/466
 advertisment_link: https://google.com
 advertisment_image: https://fillmurray.com/728/90
